@@ -1,0 +1,595 @@
+---
+title: "Can linear transportation infrastructure verges constitute a habitat and/or a corridor for vascular plants in temperate ecosystems? A systematic review"
+execute:
+  echo: false
+bibliography: references.bib
+csl: vancouver-brackets.csl
+format:
+  docx: 
+    reference-doc: custom-reference-doc.docx
+---
+
+**Abstract**
+
+*TODO*
+
+Initiales : SV : Sylvie Vanpeene, AV : Anne Villemey, AJ : Arzhvaël Jeusset,
+RS : Romain Sordello, MV : Marianne Vargac, EG : Eric Guinard, EM : Eric le
+Mitouard, VR : Vanessa Rauel, AC : Aurélie Coulon, YB : Yves Bertheau, LP :
+Louise Percevault, VF : Vinciane Fack, PP : Patrick Pacevicius, VA : Vital
+Azambourg, YR : Yorick Reyjol 
+
+ 
+# Background
+
+For the last decades, human activities have resulted in a global continuous
+loss of biodiversity [@butchart_global_2010], and transportation was identified
+as one of the ten major threats faced by threatened or near-threatened species
+[@maxwell_biodiversity_2016]. Linear transportation infrastructures (LTIs) have
+led to habitat loss and degradation, fragmentation and barrier effects, light
+and noise disturbance, chemical pollution and direct mortality (e.g. road kill,
+electrocution)
+[@bekker_habitat_2003; @biasotto_power_2018; @dorsey_ecological_2015; @feranec_european_2016; @richardson_review_2017; @trombulak_review_2000]
+.
+In particular, the splitting of natural habitats and ecosystems into smaller and
+more isolated patches (i.e. fragmentation) and the associated loss of habitat
+have negative effects on biodiversity [@krauss_habitat_2010]. For instance,
+LTIs have induced a decrease in wildlife species abundance at local and large
+scales [@benitez-lopez_impacts_2010]. And, through barrier effects LTIs can
+restrict wildlife movements, disrupt gene flow and metapopulation dynamics, and
+lead to the genetic isolation of populations over several generations 
+[*e.g.* @zachos_genetic_2007].
+
+Considered transversally, LTIs thus generate a demonstrated negative
+fragmenting effect on biodiversity, but considered longitudinally, LTIs have
+the potential to constitute a habitat and/or movement corridors for
+biodiversity by their semi-natural verges [@seiler_effects_2003]. Indeed,
+inside the LTI boundaries there is generally a transportation lane (road,
+railway, pipeline, powerline, river or canal) and verges which are most often
+covered with vegetation (road and railway embankments, strips of grass under
+power lines or above buried pipelines, or waterway banks, etc.). Studies
+assessing the potential of LTI verges as habitat and/or corridor for wildlife
+species have provided contrasted results. For instance, road verges sometimes
+contain significant portions of the remaining populations of rare plant
+species [@yates_assessing_2002; @helldin_abundance_2015]. On the other hand,
+the alteration of the original habitat induced by the construction of transport
+infrastructure can favour the establishment and spread of exotic plants 
+[*e.g.* @greenberg_roadside_1997; @meunier_roads_2012].
+The potential of LTI verges as habitat and/or corridor for wildlife species may
+also vary with verge management practices, as one practice (e.g. mowing) can be
+beneficial for some species (e.g. disturbance-tolerant species) but not for
+others (e.g. woody species) [@forman_roads_1998; @le_viol_plant_2008].
+
+Knowing the role of LTI verges as habitat and/or corridor for biodiversity is
+of importance as verges might contribute to ecological networks. In the last
+decades, ecological networks of terrestrial and aquatic continuities
+(blue-green infrastructures) aiming to decrease fragmentation have received
+much attention from scientists and policymakers [@bennett_linkages_2003].
+Meta-analyses of corridor effectiveness showed that, overall, corridors
+increase movements of plants, vertebrates and invertebrates between habitat
+patches, but that corridor effectiveness varies among taxa 
+[@gilbert-norton_meta-analytic_2010; @resasco_meta-analysis_2019].
+Maintaining such a network of ecological corridors might be beneficial on the
+long term in the context of climate change by facilitating species dispersal to
+newly suitable areas  [@heller_biodiversity_2009]. In France, the concept of
+green and blue infrastructures led to the development of a public policy named
+“Trame Verte et Bleue” (meaning green and blue ecological network) launched by
+the French Ministry of Ecology in 2007. Accordingly, French administrative
+regions have identified ecological networks and they conduct action plans for
+preserving and restoring these continuities, for biodiversity. At a smaller
+spatial scale, i.e. townships, it has also to be considered in local urban
+planning.
+
+
+## Topic identification and stakeholder input
+
+In France, the LTI network is very dense. For instance, the road network is the
+longest (over a million kilometres long, ¼ of the European network) and one of
+the densest (1.77 km/km²) of the European Union. As a comparison, Spain, which
+has an area close to the one of France, has a road density six times lower
+(0.32 km/km²). The railway network is also one of the longest in Europe with
+more than 30,000 kilometres of railway lines in use. Thus, such a dense LTI
+network means a considerable inherent surface of verges and LTI managers might
+substantially contribute to ecological networks. Furthermore, in the
+literature, the potential for LTI verges to be a habitat and/or a corridor for
+biodiversity seems to exist, but a comprehensive understanding of the
+conditions where this is true remains, as far as we know, unavailable. Seminal
+reviews on this question were previously published 
+[@trombulak_review_2000; @forman_roads_1998; @farhig_effects_2009] but they
+focused on roads and do not fulfil the standards of a systematic review
+[@pullin_guidelines_2006]. This situation motivated several French LTI managing
+companies and the French Ministry of Ecology to request a systematic review on
+this issue, at the heart of the green and blue infrastructure public policy.
+The French LTI managing companies are gathered in an informal group, named
+“Club des Infrastructures Linéaires & Biodiversité” (CILB), aiming at acting
+for biodiversity conservation. The motorway, railway, power line, pipeline and
+waterway French stakeholder companies who are members of the CILB were
+specifically interested in evaluating whether their LTI verges could
+contribute to green and blue infrastructures to improve the management of
+these verges for that purpose. The systematic review was assumed to be a
+relevant scientific method to provide a sound answer to this practical
+questioning from LTI managers. A call for tender for a systematic review was
+thus launched by the French Ministry of Ecology and the French Agency for
+Environment and Energy Management (ADEME) through its research incentive
+program related to transportation ecology, named “Infrastructures de
+Transport Terrestre, Écosystèmes et Paysage” (ITTECOP), supported by the CILB
+and the “Fondation pour la Recherche sur la Biodiversité” (FRB), a French
+foundation supporting research in biodiversity. The French National Museum of
+National History (MNHN) was then chosen for conducting the project, in
+collaboration with the Franch National Institute of Research, Agriculture and
+Environment (Inrae), the University Pierre and Marie Curie (UPMC, Paris 6),
+the French Centre for Studies and Expertise on Risks, Environment, Mobility,
+and Urban and Country Planning (Cerema). At the beginning of the project, the
+LTI managers funding the study were met to list the types of verges they own
+and the management practices they apply on those, to define the components of
+the review question.
+
+The protocol of the systematic review was published in 2016 [@jeusset_can_2016]. Because the
+question encompasses all biodiversity, a very large number of articles were
+collected. The review process was thus split by taxa in three stages. A first
+systematic review focusing on insects was published in 2018 [@villemey_can_2018]. A second
+systematic review on vertebrates (mammals, birds, amphibians and reptiles;
+organisms like fishes that are not living on or using verges but exclusively
+live in or use the LTI itself were not considered in this review) was published
+in 2020 [@ouedraogo_can_2020]. Regarding insects, our systematic review revealed that their
+abundance was generally not statistically different between LTI verges and away
+from LTIs. Insect abundance was even higher on non-highway road verges than
+away from roads. 
+Regarding vertebrates, highway verges had higher abundance of small mammals but
+both lower abundance and species richness of birds than away from highways. The
+opposite pattern was found howerver for bird species richness and abundance
+along waterways.
+Here, we propose a third systematic review on flora to complete the two previous
+ones. 
+
+
+## Objective of the review
+
+The general aim of the review was to determine if LTI verges can provide
+habitats or dispersal corridor for flora (i.e. all vascular plants except
+stricly aquatic plants). This work exclusively focused on the longitudinal
+effect of LTI verges without considering the transversal effect of LTIs such as
+barrier effects. The review also aims at assessing the effects of managements
+practices (e.g., mowing), as well as of the characteristics of the surrounding
+landscape, on the potential of LTI verges for vascular plants. 
+
+### Primary question
+
+The primary question of the review is: can linear transportation infrastructure
+verges constitue habitats and/or corridor for vascular plants in temperate
+ecosystems?
+
+### Secondary questions
+
+The approach in this review consisted in splitting the above primary question
+into six specific questions detailed in Table 1. This subdivision was used
+during study validity assessment and the synthesis of evidence.
+
+We defined LTI verges as the area up to 30 m from roadways, waterways or
+railways, or the area (whatever the width) below power lines or below/above
+pipelines. We considered the surrounding landscape to be at, at least, 1 km
+around the LTI.
+
+### Components of the primary question
+
+Population: All vascular plant (except strictly aquatic plants) species and
+communities.
+
+Exposure: LTI verges; i.e. road, railway, power line and pipeline verges and
+waterway banks. Regarding the latter, as our systematic review focused on LTIs,
+we only considered navigable waterways (navigable rivers and canals) as
+relevant exposures.
+
+Intervention: Management practices (e.g. mowing) or human-induced disturbances
+(e.g. waterway channelization) on LTI verges. 
+
+Comparator: Temporal and/or spatial comparators, including but not restricted
+to ecosystem present before versus after infrastructure construction (LTI verge
+creation), LTI verge before versus after management intervention), LTI verge
+versus nearby similar habitats away from LTIs, LTI verge managed with one
+practice versus unmanaged LTI verge or LTI verges managed with a different
+practice. 
+
+Outcomes: All outcomes relating to species presence or species dispersal,
+including but not restricted to species richness, abundance, community
+composition and species dispersal. 
+
+Context: Because the funders requested an evidence synthesis applicable to
+western Europe, we restricted our synthesis to temperate zones.
+
+**! Table 1 !**
+
+
+# Methods
+
+The methods are described in details in an a priori systematic review protocol
+[@jeusset_can_2016]. We summarize it here and present the small deviations from this protocol
+that we made when conducting the review. The methods follow the Collaboration
+for Environmental Evidence (CEE) Guidelines and Standards for Evidence
+Synthesis in Environmental Management 
+[@collaboration_for_environmental_evidence_guidelines_2018] unless noted otherwise.
+
+**! Table 2 !**
+
+## Search for articles
+
+### Search strings
+
+The review team identifed English search terms to be combined in search
+strings. For all keywords listed wild-cards may be used to allow the use of
+derivations of the word’s root and to account for the possibility of finding a
+word in various spellings (English from Great Britain or from the United
+States) and with various endings (singular or plural). 
+
+We tested a first search string combining some of the search terms with Boolean
+operators of Web Of Science Core Collection (with search on “Topic”). To assess
+the comprehensiveness of the search string, we compared the search hits to the
+articles of the test list indexed in the database (see Additional file ***XXX*** for
+the list of articles of the test list and how it was constituted). Then, we
+modifed the search string by removing some of the search terms and including
+new ones, to increase the number of articles of the test list retrieved 
+[@jeusset_can_2016].
+At last, the search string that produced the highest efficiency (i.e. total
+number of search hits as low as possible with the highest number of articles
+from the test list retrieved) was a set of four sub-search strings displayed in
+Table 2. 
+
+#### Publication databases
+
+We first listed the databases to which the members of our review team had
+access. The database selection was then based on three criteria 
+[@jeusset_can_2016]:
+
+* Topic: the database(s) had to cover ecology; 
+* Accessibility/reproducibility/sustainability: the database(s) had to be accessible by the whole review team, and by researchers all over the world (as a guarantee of reproducibility and further reviewing); 
+* Comprehensiveness: number of articles indexed in the database(s) among the
+  articles of the test list (Additional file ***XXX***)
+
+These criteria led us to select two databases: Web Of Science Core Collection
+(with subscriptions: Science Citation Index Expanded 1956-present, Social
+Sciences Citation Index 1975-present, Arts and Humanities Citation Index
+1975-present, Conference Proceedings Citation Index-Science 1990-present,
+Conference Proceedings Citation Index-Social Science & Humanities 1990-present,
+Book Citation Index-Science 2005-present, Book Citation Index-Social Sciences
+and Humanities 2005-present, Emerging Sources Citation Index 2015-present,
+Current Chemical Reactions 1985-present, and Index Chemicus 1993-present; 86
+articles indexed out of the 102 articles of the test list) and Zoological
+Records (subscribed timespan 1864-present, 51 articles out of the 102
+articles). Searches on these two databases were made on “Topic”.
+
+#### Search engines
+
+ We performed additional searches using three search engines: 
+
+* Google Scholar (https://scholar.google.fr/); 
+* BASE (Bielefeld Academic Search Engine, https:// www.base-search.net/); 
+* CORE (https://core.ac.uk/). Because these search engines could only handle a limited number of search terms and did not allow the use of all wildcards, the search strings used for publication databases were simplified. We thus developed a search string for each of the five LTIs (Additional file 3). In Google Scholar, results were sorted by relevance, with the boxes “include patents” and “include citations” unchecked. In BASE, results were sorted by relevance, with the box “boost open access documents” unchecked and the box “Verbatim search” checked. For each of the five search strings, we retrieved the first 20 hits.
+
+#### Specialist websites
+
+We searched for links or references to relevant articles and data on 11
+specialist websites including a journal special issue on transportation ecology
+(Additional file 4).
+
+#### Supplementary searches
+
+To retrieve grey literature, we contacted by email national and international
+experts of transportation ecology, through the Ecodif (now SFEcodif),
+Transenviro, Wftlistserv and IENE mailing lists and by posting a call on social
+media (https://fr.linkedin.com/). SFEcodif is a French mailing list about
+ecology and evolution which counted around 7000 subscribers (https://www.sfeco
+logie.org/sfecodif/), and Transenviro, Wftlistserv and IENE mailing lists are
+international mailing lists about transportation ecology. Together, the
+Transenviro and Wftlistserv mailing lists (http://www.itre.ncsu.edu/CTE/
+Lists/index.asp) gathered about 600 contacts and the IENE mailing list
+(http://www.iene.info/) counted around 300 contacts. All these mailing lists
+were accessed on 22 September 2015. Eventually, we contacted nearly two
+thousand people (N=1902) by individual email. Organizations funding the
+systematic review also provided us with their unpublished reports. As well,
+some experts spontaneously sent us documents on flora after having heard about
+our project (see below).
+
+#### Dates of literature searches
+
+Literature searches were performed in three stages. First, we performed
+searches in Web Of Science Core Collection publication database, in Zoological
+Records publication database, and in Google Scholar search engine on April 27th
+2015, February 1st 2016, and March 4th to 9th 2016, respectively. The call for
+grey literature was performed on April 21st 2015. All articles published in
+2016 were not considered during these first searches.
+
+Second, searches were updated on June 15th 2018 for Web Of Science Core
+Collection and Zoological Records publication databases, and on November 6th
+2018 for Google Scholar, to retrieve articles published from 2016 onward until
+these dates (Additional file 4). New searches on specialist websites were
+conducted from November 26th 2018 to December 4th 2018, and searches on BASE
+and CORE search engines were updated on November 7th and 8th 2018,
+respectively.
+
+Third, we performed an update from articles published between 2018 and 2020 on
+March 3rd, 2021 for Web Of Science Core Collection (N=6193 articles) and
+Zoological Records publication databases (N=1240 articles). Due to time
+restriction, no update was conducted however for the other sources of
+literature (Google Scholar, CORE, BASE). There was no update of the call for
+grey literature either, but we received spontaneously documents from experts by
+emails: on 20th October 2021 from Mayenne Nature Environnement (N=10 articles)
+and on the 15 November 2021 from Frédéric Hendoux, director of the Conservation
+Botanique National du Bassin Parisien (N=4 articles).
+
+Finally, articles from a previsouly published review on roadside management
+were included into our review (Jakobsson 2018).
+
+## Article screening and study eligibility criteria
+
+### Screening process
+
+The articles collected from online publication databases were screened by
+several member of the review team for eligibility (according to the criteria
+described in the next section) through three successive stages : first on
+titles (performed by SV, AV, AJ, RS, MV, EG, EM, VR, LP), second on abstracts
+(performed by SV, AV, AJ, RS, MV, EG, EM, VR, AC, YB, LP), and third on
+full-texts (performed by LP, VF, VR, SV, AV, AJ, AC, DYO, EG, EM, MV, RS, PP,
+VA, YB, YR). The number of articles screened by each member of the review team
+is detailed in the supplementary file ***XXX***.
+
+The screening is conservative at each stage : in cases of doubt, articles
+proceed to the next stage for further assessment. The agreement between
+screener was assessed before beginning a screening stage (title, abstract or
+full-text screening stage) by computing a Randolph’s Kappa coefficient [@jeusset_can_2016] on
+a number of references randomly sampled among the database of articles about
+flora. These randomly sampled articles were screened by each of the reviewers
+independently of each other.
+We considered
+200, 20 and 50  randomly sampled references to be sufficient to assess the
+agreement between screeners during title, abstract and full-text screening,
+respectively. It is a relatively small proportion of the total number of
+references to be screened, but these numbers were based on our experience with
+the previous systematic reviews published on insects and then on vertebrates
+[@villemey_can_2018; @ouedraogo_can_2020]. A minimal coefficient of 0.6 was
+considered an acceptable level of agreement between reviewers. All
+disagreements were discussed by reviewers, so that diferences in screeners’
+understanding of eligibility criteria could be resolved. When the coefficient
+was lower than 0.6 the operation was repeated until reaching a coefficient
+larger than 0.6.
+
+### Eligibility criteria
+
+At each stage of screening, article eligibility was based on a list of
+selection criteria. At the stage of title screening, these criteria mainly
+encompassed both the subject (ecology and related disciplines) and the
+population and exposure/intervention of the article (Table  3). The same
+criteria were applied at the stage of abstract screening, to which we added
+criteria regarding the exposure/intervention, the comparator, the outcomes or
+the study type (Table  4). Articles without abstract were discarded due to
+their high number and time constraints, and as this protocol was followed for
+the previous two reviews of our project. Finally, the same criteria as for the
+abstract stage were used for the stage of full-text screening, to which we
+added new inclusion criteria regarding the language, the climate, the type of
+publication or the specifc questions covered (Table 5). We considered that a
+study was not relevant to the purpose of the review, and thus discarded it, if
+the comparator was inappropriate (comparison between diferent seasons,
+comparator difcult to interpret for the purposes of this review, high contrast
+of habitat with the comparator (e.g. herbaceous vegetation compared to forest),
+etc.], if the sampling was not strictly done on verges (we defined LTI verges
+as the area up to 30 m from roadways, waterways, or railways, or the area
+(whatever the width) below power lines or below/above pipelines), or if—for
+questions Q5 and Q6—the landscape scale was below 1 km. As our review focused
+on transportation infrastructures, we also made sure at full-text screening
+stage that only paved roads and navigable rivers and canals were included. This
+information is unfortunately rarely provided for waterways, so we included all
+articles with Strahler [@strahler_quantitative_1957] stream order above three, canals and rivers, and we
+excluded all articles with stream order equal or below three and articles with
+no information on stream order.
+
+**! Table 3!** 
+
+**! Table 4!**
+
+**! Table 5!**
+
+To identify whether study area was in the temperate climate we used the
+Köppen–Geiger Climate Classifcation (Cfa, Cfb, Cfc, Csa, Csb, Csc, see
+[http://people.eng.unimelb.edu.au/mpeel/koppen.html](http://people.eng.unimelb.edu.au/mpeel/koppen.html)
+for the GoogleEarth layers of the Köppen–Geiger Climate Classification). When a
+study area overlapped temperate and non-temperate climate with no possibility
+to extract the data regarding only the temperate climate the study was
+discarded. Similarly, studies were excluded if the results included
+biological groups and/or exposures that were not under the scope of the
+review, with no possibility to extract results scoping the review (e.g.
+results combining aquatic and riparian flora, or combining vascular flora and
+lichen or bryophytes, results combining paths and paved roads, results
+combining streams and rivers). We also checked for data redundancy (data
+already published in another article included in the review) and added this
+factor as an exclusion cause. Articles about non vascular plant species were
+set aside during the three stages of title, abstract and full-text
+screenings.
+
+## Study validity assessment
+
+We conducted a critical appraisal of the studies and assigned them a low,
+medium or high risk of bias. To define the criteria of this appraisal, eight
+external experts in landscape connectivity and transportation ecology were
+gathered and consulted during a 1-day workshop with seven scientists of our
+review team [@jeusset_can_2016]. During the workshop, we discussed about the
+gold standard protocol of an ideal study answering our primary question with
+unlimited resources (unlimited money, time, workforce, etc.). We considered
+that a study was unreliable because of a high risk of bias, and therefore
+excluded it from the review, if there was/were:
+
+* A total absence of replications; 
+* An inadequate methodology (for example for question Q4 on the role of
+  corridor of verges, a statistical analysis of movement data that did not
+  allow to distinguish LTI verges from other habitats); 
+* A method description strongly insufficient (i.e. when it was not possible to
+  know where the sampling was done: within or outside LTI verges); 
+* Major confounding factors (e.g. strong difference in sampling effort between
+  treatment and control)
+
+We considered that a study had a medium risk of bias if it had the following
+characteristics: 
+
+* Absence of transparent and systematic procedure for the selection of sample
+  plot location (i.e. randomization, fixed distances, grids); 
+* Control–Intervention and Before–After–Intervention study designs (as opposed
+  to Before–After– Control–Intervention study designs) for the specifc
+  questions involving verge management (questions Q1 and Q3); 
+* Absence of true spatial replication of the study (for example study with
+  repetition of measures on a unique site); 
+* Attrition bias (difference in the loss of samples between control and
+  treatment); 
+* Method description slightly insufcient (some minor details were missing but
+  did not challenge our understanding of the methods). 
+
+Finally, we considered that a study that did not have a high or medium risk of
+bias had a low risk of bias. Studies with a high risk of bias were discarded
+from synthesis. In the narrative synthesis, the results of studies with a low
+risk of bias were first synthesized and then the consistency of the results of
+studies with a medium risk of bias was assessed. In the meta-analyses, the
+infuence of the level of bias (low or medium) on effect sizes was furthermore
+tested. For articles dealing with more than one specifc question (Table 1), we
+performed critical appraisal for each question separately, that we considered
+being different studies. The critical appraisal was performed as follows:
+first, each study was critically appraised by one reviewer (VF). Then, a second
+reviewer critically appraised again the uncertain cases.
+We compared conclusions of the two reviewers, and when they differed, they
+discussed disagreements until reaching a consensus and asked for a third
+reviewer if necessary. All reviewers never had to critically appraise article they authored by
+themselves. Although it is a CEE standard that at least two people
+independently critically appraise each study, it was not possible in this study
+due to the high number of articles and time constraints.
+
+## Data coding and extraction strategy
+
+### Extraction of meta-data
+
+We used the coding tool displayed in Table 6 to produce an easily searchable
+database of the studies included after critical appraisal (i.e. with low and
+medium risk of bias). If an article dealt with more than one of our specific
+questions, we coded each question in a different row.
+
+**! Table 6 !**
+
+### Extraction of data for narrative synthese
+
+For all specific questions except Q2 (for which data was extracted for
+meta-analyses only), we first extracted into tables the statistically tested
+results of all studies with low and medium bias. For each species or
+group of species we extracted the effects of exposure/intervention and
+categorized them as positive, negative or neutral. Neutral effects referred to
+comparison between control and treatment that were statistically not signifcant
+(i.e. no statistically signifcant difference between the two, α=0.05). Where
+necessary, we assessed whether the differences were statistically signifcant
+using the confidence intervals reported by the authors. Data extraction was
+performed by VF (Q3, Q4 and Q6) and HM (Q1 and Q5). 
+
+### Extraction of data for meta-analyses
+
+For each primary study, and for both LTI verges and control sites away from
+LTIs, sample sizes, outcome means, and measures of variation (standard
+deviation, standard error, or confidence interval) were extracted from tables,
+text, published raw data (e.g. in appendices), and graphics using the R package
+“metaDigitise” version 1.0.1. [@pick_reproducible_2019]. 
+When outcome means or measures of variation could not be directly extracted
+from the published data, the sample size and any other measure that enable
+further imputation according to Lajeunesse [@lajeunesse_recovering_2013] (e.g
+upper- and lower inter-quartile ranges, statistical tests parameters) were
+extracted. In case of uncertainty of the measure of variation reported (i.e.
+when it was impossible to know whether it was the standard deviation or the
+standard error that was reported), standard errors were assumed to obtain
+conservative estimates of the uncertainty around the effect sizes calculated.
+Abundance for either species groups or individual species were extracted. If a
+study reported the abundances for both a group and some particular individual
+species from the group we only used the former.
+Similarly, if total abundance or richness were given alongside data for
+specific subgroups (e.g. annuals, forbs, or ruderals), only global values were
+used except if the grouping concerned native or alien/invasive species, in
+which case the corresponding values were also extracted.
+When studies measured the biodiversity of vascular plants at various distances
+from LTI verges we used values of the furthest distance as controls. Finally,
+if a study reported several sites that could serve as a control, the site with
+habitat most similar to LTI verges was chosen as control. Data extraction was
+performed by one reviewer (HM). 
+
+## Potential effect modifiers/reasons for heterogeneity
+
+We recorded the following potential effect modifiers as
+stated in the protocol of the present review [21]:
+
+* Geographic location;
+* Biological group of vertebrates studied;
+* Site characteristics: type of LTI, type of habitat of the
+verge and type of habitat of the compared site;
+* Verge management practices (mowing, grazing, veg-
+etation burning, pesticide use, etc.);
+* Comparator type (spatial/temporal, etc.);
+* Selection of sampling location (randomization, fixed
+distances or grids versus directed sampling).
+Although identified as a potential reason for het-
+erogeneity in the protocol of the present review [21],
+we eventually considered the absence of replicates as
+an important source of bias. Accordingly, those arti-
+cles without replicates were discarded during critical
+appraisal.
+
+
+
+# Results
+
+## Data synthesis: quantitative syntheses
+
+### Description of the data
+
+We extracted quantitative data from `r DATA_LIST$N_studies_meta-analysis` among
+the `r DATA_LIST$N_studies_medium_low_bias` with low or medium risk of bias
+addressing the specific question Q2 ("Is tracheophyte biodiversity in LTI
+verges equal to, higher, or lower than in similar habitats away from the
+LTIs?"). 
+Among the `r DATA_LIST$N_cases_meta-analysis` extracted from these 
+`r DATA_LIST$N_studies_meta-analysis`, 
+`r DATA_LIST$N_cases_meta-analysis_Abundance` in 
+`r DATA_LIST$N_studies_meta-analysis_Abundance` 
+studies referred to species or group abundance, and 
+`r DATA_LIST$N_cases_meta-analysis_SR` 
+in `r DATA_LIST$N_studies_meta-analysis_SR` 
+referred to species richness (Additional file ***XXX***).
+We estimated the variance of cases with data imputation (*i.e.* filling missing
+variance by using the available data from the other studies) for
+`r DATA_LIST$N_cases_variance_imputation` 
+(`r  paste0(DATA_LIST$N_cases_variance_imputation / DATA_LIST$N_cases_meta-analysis, "%")` 
+of the total data).
+When several cases were extracted from the same study, this was because there
+was data for several species or group of species (
+`r DATA_LIST$N_studies_meta-analysis_multiple_species`), for several sites (
+`r DATA_LIST$N_studies_meta-analysis_multiple_sites`) or for several years or seasons 
+(`r DATA_LIST$N_studies_meta-analysis_multiple_years_or_seasons`).
+
+Most of the cases in our data were conducted along roads (highways 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_highways, "%")` and non-highway roads 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_nonhighways, "%")`
+), then along powerlines (`r paste0(DATA_LIST$prct_cases_meta-analysis_powerlines, "%")`), pipelines (
+`r paste0(DATA_LIST$prct_cases_meta-analysis_pipelines, "%")`) and railways (
+`r paste0(DATA_LIST$prct_cases_meta-analysis_railways, "%")`).
+***TODO: No studies for LTIs but I do not think relevant in our case ???***
+Cases were mostly from ***TODO: percent countries*** 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_Europe, "%")`, 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_North_America, "%")`, 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_Oceania, "%")`, 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_South_America, "%")`, 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_Asia, "%")`, 
+`r paste0(DATA_LIST$prct_cases_meta-analysis_Africa, "%")`  (?? - not sure)
+**TODO: percent studies dealt with Native or Exotic studies**
+
+### Meta-analyses and publication bias
+
+For abundance, we found that, overall, vascular plants were **TODO: grand mean abundance**
+(grand mean effect size `r paste0("d=", DATA_LIST$Effect_size_Abundance),` 95%
+confidence interval (95% CI) 
+`r patse0("[", DATA_LIST$Effect_size_Abundance_CI_inf, ";", DATA_LIST$Effect_size_Abundance_CI_supp, "]")`).
+
+
+
+# References
+
+::: {#refs}
+:::
+
