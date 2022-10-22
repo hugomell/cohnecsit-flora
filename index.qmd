@@ -532,8 +532,55 @@ cles without replicates were discarded during critical
 appraisal.
 
 
-
 # Results
+
+## Literature search retrieval
+
+### Literature searches and screening
+
+- Basic info on volumes of articles
+- Fig. ROSES flow diagram
+
+### Study validity assessment
+
+- Volumes critically appraised and reasons for high risk of bias
+- Number of studies for narrative synthesis and meta-analyses and restate
+  conditions to be included in each.
+
+### Characteristics of the studies
+
+- percent low risk of bias
+- numbers by question
+- Fig. Number of studies with low, medium, high risk of bias for each question
+
+
+### Publication year
+
+- Fig. Publication years (5 years brackets) before and after critical
+  appraisal.
+
+### Source
+
+### Language and type of article
+
+### Study location
+
+- Fig. Number of studies for each country (and corresponding continent)
+
+### Study design
+
+### Taxa studied
+
+### Exposures
+
+- Number of studies by question, LTI, Plant status (Figure ?)
+
+### Interventions
+
+- Management categories for Q1
+
+### Measured outcomes
+
 
 ## Data synthesis: quantitative syntheses
 
