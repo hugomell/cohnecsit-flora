@@ -2,12 +2,15 @@
 title: "Can linear transportation infrastructure verges constitute a habitat and/or a corridor for vascular plants in temperate ecosystems? A systematic review"
 execute:
   echo: false
+  warning: false
 bibliography: references.bib
 csl: vancouver-brackets.csl
-format:
-  docx: 
-    reference-doc: custom-reference-doc.docx
+format: html
 ---
+
+<!--  docx: 
+    reference-doc: custom-reference-doc.docx
+-->
 
 **Abstract**
 
@@ -534,22 +537,95 @@ appraisal.
 
 # Results
 
+```{r}
+
+library(data.table)
+data_synthesis <- fread("../R/data/SI-6-analyse-critique_v3.csv")
+data_metaanalysis <- fread("../R/data/DATAOK_metaanalysesCOHNECSIT_ITTECOP.csv")
+
+```
+
 ## Literature search retrieval
 
 ### Literature searches and screening
 
-- Basic info on volumes of articles
-- Fig. ROSES flow diagram
+Searches about the role of linear transportation infrastructure as habitat
+and/or corridor for biodiversity returned **93014** articles from 1972 to 2020
+(**74062** from the initial search retrieval and **18 952** from the
+actualisation in 2020).
+After the title screening stage, **10775** articles concerning vascular
+plants were accepted.
+During the abstract screening stage, we rejected **6778**
+articles from the corpus, yielding **N** articles for full-text screening.
+We could not retrieve full-texts for **N** articles (**N%**) and among the
+remaining **N** articles, **N** were accepted for critical appraisal from the
+litterature search retrieval (see ROSES flow diagram in Figure **XXX**).
+For articles that were rejected at full-text screening, the most common reasons
+for exclusions were: **TODO**.
+
+A posteriori, some articles were included in the screening process (Figure **XXX**).
+Indeed, we considered 50 articles from a review of Jakobsson et al. (2018).
+This recent review assessed the role of ILT infrastructure management on the
+flora biodiversity. As it corresponds to our question Q1, we included articles which
+were not already in our corpus. 
+One of them was excluded at the abstract screening for the lack of abstract,
+the PDF of 7 articles was missing, **25** articles were excluded at the title
+screening stage and **17** articles were included in the critical appraisal
+stage. The exclusions of the **25** articles was either because studies were
+not conducted under a temperate climate (**76%**), or because the document was
+written in a language other than English or French (**24%**).
+Later in the search process, we also received 10 and four articles by mail from
+experts (Mayenne Nature Environnement and Conservatoire botanique national du
+Bassin parisien, respectively). Howevevr, these articles were all excluded from the screening
+process at the full-text stage. Indeed, four of them were reviews and the others were
+rejected because of the type of study or because the exposure criteria were not
+met.
+
+Thus, at the end of the screening phase, **590** articles remained (Figure **XXX**). 
+The articles rejected at full-text screening as well as those for which we did
+not find full-texts are listed in Additional file **XXX** with reason for exclusion
+(also detailed in Figure **XXX**).
+
 
 ### Study validity assessment
 
-- Volumes critically appraised and reasons for high risk of bias
-- Number of studies for narrative synthesis and meta-analyses and restate
-  conditions to be included in each.
+```{r}
+
+N_studies_all_bias <- nrow(data_synthesis)
+N_studies_medium_low_bias <- nrow(data_synthesis[Risk_of_bias %in% c("Low", "Medium")])
+N_articles_all_bias <- length(unique(data_synthesis$ID_doc))
+N_articles_medium_low_bias <- length(unique(data_synthesis[Risk_of_bias %in% c("Low", "Medium"), ID_doc]))
+
+# cat(paste(N_studies_all_bias, N_studies_medium_low_bias, N_articles_all_bias, N_articles_medium_low_bias, '\n', sep = '\n'))
+
+```
+
+Because an article can answer to more than one of our specifc subquestions, the
+`r N_articles_all_bias` articles included in the review were split into `r N_studies_all_bias` diferent studies that
+underwent critical appraisal. 
+At this stage, `r N_studies_all_bias - N_studies_medium_low_bias` studies were excluded from further synthesis because
+they showed a high risk of bias.
+The reasons for a high risk of bias were the presence of an inappropriate
+comparator (**N%**), a major confounding factor (**N%**), a strongly
+insufficient description of the method (**N%**), and an absence of
+replication (**N%** ; Figure **XXX**).
+Thus, a total of `r N_studies_medium_low_bias` studies corresponding to `r N_articles_medium_low_bias` articles were
+retained after critical appraisal.
+Additional file **XXX** provides a list of all studies retained after the
+screening stage with coded metadata and their level of risk of bias assessed
+during critical appraisal. The number of studies of each category of bias for
+every subquestion is also given in Figure **X**.
+
+After the critical appraisal stage, **N** studies with a low or medium risk of
+bias that reported statistical results for any subquestion except Q2
+were further included in the narrative synthesis.
+The **X** studies with a low or medium risk of bias dealing with Q2
+were treated separately in a meta-analysis. Among them **N**
+studies provided appropriate data to calculate an effect size for *Species
+richness* or *Abundance*. 
 
 ### Characteristics of the studies
 
-- percent low risk of bias
 - numbers by question
 - Fig. Number of studies with low, medium, high risk of bias for each question
 
@@ -584,54 +660,163 @@ appraisal.
 
 ## Data synthesis: quantitative syntheses
 
+```{r}
+
+# Calculate percentage of cases for each level of categorical variable
+get_prct_cases <- function(data, column) {
+  l <- list()
+  categories <- unique(data[[column]])
+  results <- vector("numeric", length(categories))
+  for (i in seq_along(categories)) {
+    v <- (sum(data[[column]] == categories[i]) / length(data[[column]])) * 100
+    l[[paste0("Percent_cases_", categories[i])]] <- v
+  }
+  return(l)
+}
+
+N_studies_metaanalysis <- length(unique(data_metaanalysis$Author_date))
+N_cases_metaanalysis <- nrow(data_metaanalysis)
+N_cases_metaanalysis_global <- nrow(data_metaanalysis[Global_analysis == "Yes"])
+
+# Cases/Studies by outcome
+dt_number_of_studies_cases_outcome <- data_metaanalysis[, .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable)]
+N_cases_metaanalysis_abundance <- dt_number_of_studies_cases_outcome[Response_variable == "Abundance", N_cases]
+N_cases_metaanalysis_species_richness <- dt_number_of_studies_cases_outcome[Response_variable == "Species_richness", N_cases]
+N_studies_metaanalysis_abundance <- dt_number_of_studies_cases_outcome[Response_variable == "Abundance", N_studies]
+N_studies_metaanalysis_species_richness <- dt_number_of_studies_cases_outcome[Response_variable == "Species_richness", N_studies]
+
+# Cases/studies by LTI
+dt_number_of_studies_cases_LTI <- data_metaanalysis[, .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(ILT_analysis)]
+
+```
+
 ### Description of the data
 
-We extracted quantitative data from `r DATA_LIST$N_studies_meta-analysis` among
-the `r DATA_LIST$N_studies_medium_low_bias` with low or medium risk of bias
+We extracted quantitative data from `r N_studies_metaanalysis` among
+the `r N_studies_medium_low_bias` with low or medium risk of bias
 addressing the specific question Q2 ("Is tracheophyte biodiversity in LTI
 verges equal to, higher, or lower than in similar habitats away from the
 LTIs?"). 
-Among the `r DATA_LIST$N_cases_meta-analysis` extracted from these 
-`r DATA_LIST$N_studies_meta-analysis`, 
-`r DATA_LIST$N_cases_meta-analysis_Abundance` in 
-`r DATA_LIST$N_studies_meta-analysis_Abundance` 
-studies referred to species or group abundance, and 
-`r DATA_LIST$N_cases_meta-analysis_SR` 
-in `r DATA_LIST$N_studies_meta-analysis_SR` 
-referred to species richness (Additional file ***XXX***).
+Among the `r N_cases_metaanalysis` extracted from these 
+`r N_studies_metaanalysis`, 
+`r N_cases_metaanalysis_abundance` cases in 
+`r N_studies_metaanalysis_abundance` 
+studies concerned species or group abundance, and 
+`r N_cases_metaanalysis_species_richness`
+in `r N_studies_metaanalysis_species_richness` studies
+concerned species richness (Additional file ***XXX***).
 We estimated the variance of cases with data imputation (*i.e.* filling missing
 variance by using the available data from the other studies) for
-`r DATA_LIST$N_cases_variance_imputation` 
-(`r  paste0(DATA_LIST$N_cases_variance_imputation / DATA_LIST$N_cases_meta-analysis, "%")` 
-of the total data).
+`r nrow(data_metaanalysis[is.na(Measure_var_treatment),])` cases
+(
+`r  paste0(round((nrow(data_metaanalysis[is.na(Measure_var_treatment) & Response_variable == "Abundance",]) / N_cases_metaanalysis_abundance) * 100, 1), "%")`
+of Abundance cases and 
+`r  paste0(round((nrow(data_metaanalysis[is.na(Measure_var_treatment) & Response_variable == "Species_richness",]) / N_cases_metaanalysis_species_richness) * 100, 1), "%")`
+of Species richness cases).
 When several cases were extracted from the same study, this was because there
-was data for several species or group of species (
-`r DATA_LIST$N_studies_meta-analysis_multiple_species`), for several sites (
-`r DATA_LIST$N_studies_meta-analysis_multiple_sites`) or for several years or seasons 
-(`r DATA_LIST$N_studies_meta-analysis_multiple_years_or_seasons`).
+was data for several species or group of species, for several sites, or for several years or seasons.
 
 Most of the cases in our data were conducted along roads (highways 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_highways, "%")` and non-highway roads 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_nonhighways, "%")`
-), then along powerlines (`r paste0(DATA_LIST$prct_cases_meta-analysis_powerlines, "%")`), pipelines (
-`r paste0(DATA_LIST$prct_cases_meta-analysis_pipelines, "%")`) and railways (
-`r paste0(DATA_LIST$prct_cases_meta-analysis_railways, "%")`).
-***TODO: No studies for LTIs but I do not think relevant in our case ???***
-Cases were mostly from ***TODO: percent countries*** 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_Europe, "%")`, 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_North_America, "%")`, 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_Oceania, "%")`, 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_South_America, "%")`, 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_Asia, "%")`, 
-`r paste0(DATA_LIST$prct_cases_meta-analysis_Africa, "%")`  (?? - not sure)
-**TODO: percent studies dealt with Native or Exotic studies**
+`r paste0(round(get_prct_cases(data_metaanalysis, "ILT_analysis")$Percent_cases_Highway, 1), "%")`
+) and non-highway roads (
+`r paste0(round(get_prct_cases(data_metaanalysis, "ILT_analysis")$Percent_cases_Non_Highway_road, 1), "%")`
+), then along powerlines (
+`r paste0(round(get_prct_cases(data_metaanalysis, "ILT_analysis")$Percent_cases_Powerline, 1), "%")`
+),
+pipelines (
+`r paste0(round(get_prct_cases(data_metaanalysis, "ILT_analysis")$Percent_cases_Pipeline, 1), "%")`
+) and railways (
+`r paste0(round(get_prct_cases(data_metaanalysis, "ILT_analysis")$Percent_cases_Railway, 1), "%")`
+).
+
+Cases were mostly from studies conducted in North America and Europe (North America:
+`r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_North_America, 2), "%")`
+, Europe:
+`r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_Europe , 1), "%")`
+, Oceania:
+`r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_Oceania , 1), "%")`
+, South America:
+`r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_South_America , 1), "%")`
+, and Asia:
+`r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_Asia , 1), "%")`
+).
 
 ### Meta-analyses and publication bias
 
+```{r}
+
+library(metafor)
+
+```
+
+```{r}
+
+GM <- rma.mv(
+  yi=yi,
+  V=vi,
+  mods= ~1,
+  random= ~1 | Author_date/Case.ID,
+  data=data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes",],
+  method="REML"
+)
+
+GM_no_influential_cases <- rma.mv(
+  yi=yi,
+  V=vi,
+  mods= ~1,
+  random= ~1 | Author_date/Case.ID, data=data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),],
+  method="REML"
+)
+
+GM_SR <- rma.mv(
+  yi=yi,
+  V=vi,
+  mods= ~1,
+  random= ~1 | Author_date/Case.ID,
+  data=data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",],
+  method="REML"
+)
+
+# Tables with numeric results for different models
+dt_GM <- data.table(
+  Model_ID = "Grand mean - Abundance",
+  Coeff = round(GM$b[1], 2),
+  ci_supp = round(GM$ci.ub, 2),
+  ci_inf = round(GM$ci.lb, 2),
+  QE =GM$QE,
+  QE_pvalue = ifelse(GM$QEp == 0, "p < 0.0001", paste0("p = ", round(GM$QEp, 2))),
+  N = GM$k
+)
+
+dt_GM_no_influential_cases <- data.table(
+  Model_ID = "Grand mean - Abundance - No influential cases",
+  Coeff = round(GM_no_influential_cases$b[1], 2),
+  ci_supp = round(GM_no_influential_cases$ci.ub, 2),
+  ci_inf = round(GM_no_influential_cases$ci.lb, 2),
+  QE = GM_no_influential_cases$QE,
+  QE_pvalue = ifelse(GM_no_influential_cases$QEp == 0, "p < 0.0001", paste0("p = ", round(GM_minus_influential_cases$QEp, 2))),
+  N = GM_no_influential_cases$k
+)
+
+dt_GM_SR <- data.table(
+  Model_ID = "Grand mean - Species richness",
+  Coeff = round(GM_SR$b[1], 2),
+  ci_supp = round(GM_SR$ci.ub, 2),
+  ci_inf = round(GM_SR$ci.lb, 2),
+  QE = GM_SR$QE,
+  QE_pvalue = ifelse(GM_SR$QEp == 0, "p < 0.0001", paste0("p = ", round(GM_SR$QEp, 2))),
+  N = GM_SR$k
+)
+
+dt_GM_results <- rbindlist(list(dt_GM, dt_GM_no_influential_cases, dt_GM_SR))
+```
+
 For abundance, we found that, overall, vascular plants were **TODO: grand mean abundance**
-(grand mean effect size `r paste0("d=", DATA_LIST$Effect_size_Abundance),` 95%
+
+(grand mean effect size `r paste0("d=", dt_GM$Coeff)`, 95%
 confidence interval (95% CI) 
-`r patse0("[", DATA_LIST$Effect_size_Abundance_CI_inf, ";", DATA_LIST$Effect_size_Abundance_CI_supp, "]")`).
+`r paste0("[", dt_GM$ci_inf, ";", dt_GM$ci_supp, "]")`
+).
 
 
 
