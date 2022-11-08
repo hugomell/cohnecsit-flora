@@ -5,12 +5,11 @@ execute:
   warning: false
 bibliography: references.bib
 csl: vancouver-brackets.csl
-format: html
+format:
+  docx: 
+    reference-doc: custom-reference-doc.docx
 ---
 
-<!--  docx: 
-    reference-doc: custom-reference-doc.docx
--->
 
 **Abstract**
 
@@ -98,7 +97,7 @@ literature, the potential for LTI verges to be a habitat and/or a corridor for
 biodiversity seems to exist, but a comprehensive understanding of the
 conditions where this is true remains, as far as we know, unavailable. Seminal
 reviews on this question were previously published 
-[@trombulak_review_2000; @forman_roads_1998; @farhig_effects_2009] but they
+[_e.g._ @trombulak_review_2000; @forman_roads_1998; @farhig_effects_2009] but they
 focused on roads and do not fulfil the standards of a systematic review
 [@pullin_guidelines_2006]. This situation motivated several French LTI managing
 companies and the French Ministry of Ecology to request a systematic review on
@@ -142,7 +141,7 @@ Regarding vertebrates, highway verges had higher abundance of small mammals but
 both lower abundance and species richness of birds than away from highways. The
 opposite pattern was found howerver for bird species richness and abundance
 along waterways.
-Here, we propose a third systematic review on flora to complete the two previous
+Here, we propose a third systematic review on flora to complement the two previous
 ones. 
 
 
@@ -178,13 +177,13 @@ around the LTI.
 Population: All vascular plant (except strictly aquatic plants) species and
 communities.
 
-Exposure: LTI verges; i.e. road, railway, power line and pipeline verges and
+Exposure: LTI verges; i.e. road, railway, powerline and pipeline verges and
 waterway banks. Regarding the latter, as our systematic review focused on LTIs,
 we only considered navigable waterways (navigable rivers and canals) as
 relevant exposures.
 
 Intervention: Management practices (e.g. mowing) or human-induced disturbances
-(e.g. waterway channelization) on LTI verges. 
+(_e.g._ waterway channelization) on LTI verges. 
 
 Comparator: Temporal and/or spatial comparators, including but not restricted
 to ecosystem present before versus after infrastructure construction (LTI verge
@@ -200,8 +199,6 @@ composition and species dispersal.
 Context: Because the funders requested an evidence synthesis applicable to
 western Europe, we restricted our synthesis to temperate zones.
 
-**! Table 1 !**
-
 
 # Methods
 
@@ -211,8 +208,6 @@ that we made when conducting the review. The methods follow the Collaboration
 for Environmental Evidence (CEE) Guidelines and Standards for Evidence
 Synthesis in Environmental Management 
 [@collaboration_for_environmental_evidence_guidelines_2018] unless noted otherwise.
-
-**! Table 2 !**
 
 ## Search for articles
 
@@ -338,18 +333,17 @@ is detailed in the supplementary file ***XXX***.
 The screening is conservative at each stage : in cases of doubt, articles
 proceed to the next stage for further assessment. The agreement between
 screener was assessed before beginning a screening stage (title, abstract or
-full-text screening stage) by computing a Randolph’s Kappa coefficient [@jeusset_can_2016] on
-a number of references randomly sampled among the database of articles about
-flora. These randomly sampled articles were screened by each of the reviewers
-independently of each other.
-We considered
-200, 20 and 50  randomly sampled references to be sufficient to assess the
-agreement between screeners during title, abstract and full-text screening,
-respectively. It is a relatively small proportion of the total number of
-references to be screened, but these numbers were based on our experience with
-the previous systematic reviews published on insects and then on vertebrates
-[@villemey_can_2018; @ouedraogo_can_2020]. A minimal coefficient of 0.6 was
-considered an acceptable level of agreement between reviewers. All
+full-text screening stage) by computing a Randolph’s Kappa coefficient
+[@jeusset_can_2016] on a number of references randomly sampled among the
+database of articles about flora. These randomly sampled articles were screened
+by each of the reviewers independently of each other.
+We considered 200, 20 and 50  randomly sampled references to be sufficient to
+assess the agreement between screeners during title, abstract and full-text
+screening, respectively. It is a relatively small proportion of the total
+number of references to be screened, but these numbers were based on our
+experience with the previous systematic reviews published on insects and then
+on vertebrates [@villemey_can_2018; @ouedraogo_can_2020]. A minimal coefficient
+of 0.6 was considered an acceptable level of agreement between reviewers. All
 disagreements were discussed by reviewers, so that diferences in screeners’
 understanding of eligibility criteria could be resolved. When the coefficient
 was lower than 0.6 the operation was repeated until reaching a coefficient
@@ -380,15 +374,9 @@ questions Q5 and Q6—the landscape scale was below 1 km. As our review focused
 on transportation infrastructures, we also made sure at full-text screening
 stage that only paved roads and navigable rivers and canals were included. This
 information is unfortunately rarely provided for waterways, so we included all
-articles with Strahler [@strahler_quantitative_1957] stream order above three, canals and rivers, and we
-excluded all articles with stream order equal or below three and articles with
-no information on stream order.
-
-**! Table 3!** 
-
-**! Table 4!**
-
-**! Table 5!**
+articles with Strahler [@strahler_quantitative_1957] stream order above three,
+canals and rivers, and we excluded all articles with stream order equal or
+below three and articles with no information on stream order.
 
 To identify whether study area was in the temperate climate we used the
 Köppen–Geiger Climate Classifcation (Cfa, Cfb, Cfc, Csa, Csb, Csc, see
@@ -421,7 +409,7 @@ excluded it from the review, if there was/were:
 
 * A total absence of replications; 
 * An inadequate methodology (for example for question Q4 on the role of
-  corridor of verges, a statistical analysis of movement data that did not
+  corridor of verges, a statistical analysis of dispersal data that did not
   allow to distinguish LTI verges from other habitats); 
 * A method description strongly insufficient (i.e. when it was not possible to
   know where the sampling was done: within or outside LTI verges); 
@@ -470,7 +458,6 @@ database of the studies included after critical appraisal (i.e. with low and
 medium risk of bias). If an article dealt with more than one of our specific
 questions, we coded each question in a different row.
 
-**! Table 6 !**
 
 ### Extraction of data for narrative synthese
 
@@ -480,7 +467,7 @@ results of all studies with low and medium bias. For each species or
 group of species we extracted the effects of exposure/intervention and
 categorized them as positive, negative or neutral. Neutral effects referred to
 comparison between control and treatment that were statistically not signifcant
-(i.e. no statistically signifcant difference between the two, α=0.05). Where
+(_i.e._ no statistically signifcant difference between the two, α=0.05). Where
 necessary, we assessed whether the differences were statistically signifcant
 using the confidence intervals reported by the authors. Data extraction was
 performed by VF (Q3, Q4 and Q6) and HM (Q1 and Q5). 
@@ -505,10 +492,13 @@ study reported the abundances for both a group and some particular individual
 species from the group we only used the former.
 Similarly, if total abundance or richness were given alongside data for
 specific subgroups (e.g. annuals, forbs, or ruderals), only global values were
-used except if the grouping concerned native or alien/invasive species, in
-which case the corresponding values were also extracted.
+used except if the grouping concerned the native or exotic/invasive status of species, in
+which case results were also extracted in addition to the global ones.
 When studies measured the biodiversity of vascular plants at various distances
-from LTI verges we used values of the furthest distance as controls. Finally,
+from LTI verges we used values of the furthest distance as controls. When
+studies reported multiple measures along a distance gradient within the
+boundaries of the LTI verges, means and standard deviations were
+combined and used to compute a single effect size. Finally,
 if a study reported several sites that could serve as a control, the site with
 habitat most similar to LTI verges was chosen as control. Data extraction was
 performed by one reviewer (HM). 
@@ -516,23 +506,22 @@ performed by one reviewer (HM).
 ## Potential effect modifiers/reasons for heterogeneity
 
 We recorded the following potential effect modifiers as
-stated in the protocol of the present review [21]:
+stated in the protocol of the present review [@jeusset_can_2016]:
 
 * Geographic location;
-* Biological group of vertebrates studied;
+* Biological groups studied;
 * Site characteristics: type of LTI, type of habitat of the
-verge and type of habitat of the compared site;
-* Verge management practices (mowing, grazing, veg-
-etation burning, pesticide use, etc.);
+verge/comparator sites and level of contrast between them;
+* Verge management practices (mowing, grazing, vegetation burning, pesticide
+  use, etc.);
 * Comparator type (spatial/temporal, etc.);
-* Selection of sampling location (randomization, fixed
-distances or grids versus directed sampling).
-Although identified as a potential reason for het-
-erogeneity in the protocol of the present review [21],
-we eventually considered the absence of replicates as
-an important source of bias. Accordingly, those arti-
-cles without replicates were discarded during critical
-appraisal.
+* Selection of sampling location (randomization, fixed distances or grids
+  versus directed sampling).
+Although identified as a potential reason for heterogeneity in the review
+protocol, we eventually considered the absence of replicates as an important
+source of bias. Accordingly, those articles without replicates were discarded
+during critical appraisal.
+
 
 
 # Results
@@ -540,127 +529,14 @@ appraisal.
 ```{r}
 
 library(data.table)
-data_synthesis <- fread("../R/data/SI-6-analyse-critique_v3.csv")
+library(ggplot2)
+library(metafor)
+library(RColorBrewer)
+
+data_exclusion <- fread("../R/data/SI5_articles-excluded-fulltextstage-v3.csv")
+data_critical_appraisal <- fread("../R/data/SI-6-analyse-critique_v4.csv")
+data_synthesis <- fread("../R/data/SI-7-included-studies_v3.csv")
 data_metaanalysis <- fread("../R/data/DATAOK_metaanalysesCOHNECSIT_ITTECOP.csv")
-
-```
-
-## Literature search retrieval
-
-### Literature searches and screening
-
-Searches about the role of linear transportation infrastructure as habitat
-and/or corridor for biodiversity returned **93014** articles from 1972 to 2020
-(**74062** from the initial search retrieval and **18 952** from the
-actualisation in 2020).
-After the title screening stage, **10775** articles concerning vascular
-plants were accepted.
-During the abstract screening stage, we rejected **6778**
-articles from the corpus, yielding **N** articles for full-text screening.
-We could not retrieve full-texts for **N** articles (**N%**) and among the
-remaining **N** articles, **N** were accepted for critical appraisal from the
-litterature search retrieval (see ROSES flow diagram in Figure **XXX**).
-For articles that were rejected at full-text screening, the most common reasons
-for exclusions were: **TODO**.
-
-A posteriori, some articles were included in the screening process (Figure **XXX**).
-Indeed, we considered 50 articles from a review of Jakobsson et al. (2018).
-This recent review assessed the role of ILT infrastructure management on the
-flora biodiversity. As it corresponds to our question Q1, we included articles which
-were not already in our corpus. 
-One of them was excluded at the abstract screening for the lack of abstract,
-the PDF of 7 articles was missing, **25** articles were excluded at the title
-screening stage and **17** articles were included in the critical appraisal
-stage. The exclusions of the **25** articles was either because studies were
-not conducted under a temperate climate (**76%**), or because the document was
-written in a language other than English or French (**24%**).
-Later in the search process, we also received 10 and four articles by mail from
-experts (Mayenne Nature Environnement and Conservatoire botanique national du
-Bassin parisien, respectively). Howevevr, these articles were all excluded from the screening
-process at the full-text stage. Indeed, four of them were reviews and the others were
-rejected because of the type of study or because the exposure criteria were not
-met.
-
-Thus, at the end of the screening phase, **590** articles remained (Figure **XXX**). 
-The articles rejected at full-text screening as well as those for which we did
-not find full-texts are listed in Additional file **XXX** with reason for exclusion
-(also detailed in Figure **XXX**).
-
-
-### Study validity assessment
-
-```{r}
-
-N_studies_all_bias <- nrow(data_synthesis)
-N_studies_medium_low_bias <- nrow(data_synthesis[Risk_of_bias %in% c("Low", "Medium")])
-N_articles_all_bias <- length(unique(data_synthesis$ID_doc))
-N_articles_medium_low_bias <- length(unique(data_synthesis[Risk_of_bias %in% c("Low", "Medium"), ID_doc]))
-
-# cat(paste(N_studies_all_bias, N_studies_medium_low_bias, N_articles_all_bias, N_articles_medium_low_bias, '\n', sep = '\n'))
-
-```
-
-Because an article can answer to more than one of our specifc subquestions, the
-`r N_articles_all_bias` articles included in the review were split into `r N_studies_all_bias` diferent studies that
-underwent critical appraisal. 
-At this stage, `r N_studies_all_bias - N_studies_medium_low_bias` studies were excluded from further synthesis because
-they showed a high risk of bias.
-The reasons for a high risk of bias were the presence of an inappropriate
-comparator (**N%**), a major confounding factor (**N%**), a strongly
-insufficient description of the method (**N%**), and an absence of
-replication (**N%** ; Figure **XXX**).
-Thus, a total of `r N_studies_medium_low_bias` studies corresponding to `r N_articles_medium_low_bias` articles were
-retained after critical appraisal.
-Additional file **XXX** provides a list of all studies retained after the
-screening stage with coded metadata and their level of risk of bias assessed
-during critical appraisal. The number of studies of each category of bias for
-every subquestion is also given in Figure **X**.
-
-After the critical appraisal stage, **N** studies with a low or medium risk of
-bias that reported statistical results for any subquestion except Q2
-were further included in the narrative synthesis.
-The **X** studies with a low or medium risk of bias dealing with Q2
-were treated separately in a meta-analysis. Among them **N**
-studies provided appropriate data to calculate an effect size for *Species
-richness* or *Abundance*. 
-
-### Characteristics of the studies
-
-- numbers by question
-- Fig. Number of studies with low, medium, high risk of bias for each question
-
-
-### Publication year
-
-- Fig. Publication years (5 years brackets) before and after critical
-  appraisal.
-
-### Source
-
-### Language and type of article
-
-### Study location
-
-- Fig. Number of studies for each country (and corresponding continent)
-
-### Study design
-
-### Taxa studied
-
-### Exposures
-
-- Number of studies by question, LTI, Plant status (Figure ?)
-
-### Interventions
-
-- Management categories for Q1
-
-### Measured outcomes
-
-
-## Data synthesis: quantitative syntheses
-
-```{r}
 
 # Calculate percentage of cases for each level of categorical variable
 get_prct_cases <- function(data, column) {
@@ -673,6 +549,231 @@ get_prct_cases <- function(data, column) {
   }
   return(l)
 }
+
+```
+
+## Literature search retrieval
+
+
+### Literature searches and screening
+
+Searches about the role of linear transportation infrastructure as habitat
+and/or corridor for biodiversity returned 93014 articles from 1972 to 2020
+(74062 from the initial search retrieval and 18 952 from the
+actualisation in 2020).
+After the title screening stage, 10775 articles concerning vascular
+plants were accepted.
+During the abstract screening stage, we rejected 6778
+articles from the corpus, yielding `r nrow(data_exclusion)` articles for full-text
+screening.
+We could not retrieve full-texts for 
+`r nrow(data_exclusion[Reasons_for_rejection == "Pdf cannot be obtained"])` 
+articles (
+`r paste0(round((nrow(data_exclusion[Reasons_for_rejection == "Pdf cannot be obtained"]) / nrow(data_exclusion)) * 100), "%")` 
+) and among the other articles, 
+`r nrow(data_critical_appraisal[Corpus %in% c("Initial", "NO_Abstract")])`
+were accepted for critical appraisal from the
+litterature search retrieval (see ROSES flow diagram in Figure **XXX**).
+For articles that were rejected at full-text screening, the most common reasons
+for exclusions were: that sites were not in the bioclimatic region of interest
+(
+`r paste0(round((nrow(data_exclusion[Reasons_for_rejection == "Sites are not in the bioclimatic region"]) / nrow(data_exclusion)) * 100, 1), "%")`
+), that the type of a study was not appropriate (_e.g_ a simulation study ; 
+`r paste0(round((nrow(data_exclusion[Reasons_for_rejection == "The study type is inappropriate (no data, simulation, recommendation)"]) / nrow(data_exclusion)) * 100), "%")`
+) and that there was no appropriate comparator (
+`r paste0(round((nrow(data_exclusion[Reasons_for_rejection == "The comparator is inappropriate"]) / nrow(data_exclusion)) * 100), "%")`
+).
+
+A posteriori, some articles were included in the screening process (Figure **XXX**).
+Indeed, we considered 50 articles from the review of Jakobsson et al. (2018).
+This recent review assessed the role of ILT infrastructure management on the
+flora biodiversity. As it corresponds to our question Q1, we included articles which
+were not already in our corpus. 
+One of them was lacking an abstract was and therefore excluded during abstract screening,
+no PDF could be obtained for 7 articles, 25 articles were excluded at the title
+screening stage and `r nrow(data_critical_appraisal[Corpus == "Revue_2018"])` 
+articles were included in the critical appraisal stage. The exclusions of the
+25 articles was either because studies were not conducted under a temperate
+climate (76%), or because the document was written in a language other than
+English or French (24%).
+Later in the search process, we also received 10 and four articles by mail from
+experts (Mayenne Nature Environnement and Conservatoire botanique national du
+Bassin parisien, respectively). However, these articles were all excluded from the screening
+process at the full-text stage. Indeed, four of them were reviews and the others were
+rejected because of the type of study or because the exposure criteria were not
+met.
+
+Thus, at the end of the screening phase, `r nrow(data_critical_appraisal)` articles remained (Figure **XXX**). 
+The articles rejected at full-text screening as well as those for which we did
+not find full-texts are listed in Additional file **XXX** with reason for exclusion
+(also detailed in Figure **XXX**).
+
+
+### Study validity assessment
+
+```{r}
+
+N_studies_all_bias <- nrow(data_critical_appraisal)
+N_studies_medium_low_bias <- nrow(data_critical_appraisal[Risk_of_bias %in% c("Low", "Medium")])
+N_articles_all_bias <- length(unique(data_critical_appraisal$ID_doc))
+N_articles_medium_low_bias <- length(unique(data_critical_appraisal[Risk_of_bias %in% c("Low", "Medium"), ID_doc]))
+
+# cat(paste(N_studies_all_bias, N_studies_medium_low_bias, N_articles_all_bias, N_articles_medium_low_bias, '\n', sep = '\n'))
+
+```
+
+Because an article can answer to more than one of our specific subquestions, the
+`r N_articles_all_bias` articles included in the review were split into 
+`r N_studies_all_bias` diferent studies that underwent critical appraisal. 
+At this stage, `r N_studies_all_bias - N_studies_medium_low_bias` studies were excluded from further synthesis because
+they showed a high risk of bias.
+The reasons for a high risk of bias were a strongly insufficient description of the method (
+`r paste0(round((nrow(data_critical_appraisal[Reasons_for_rejection %in% c("High risk of bias (method description strongly insufficient)", "High risk of bias (major counfounding factor and method description strongly insufficient)" )]) / nrow(data_critical_appraisal)) * 100), "%")`
+), the presence a major confounding factor (
+`r paste0(round((nrow(data_critical_appraisal[Reasons_for_rejection %in% c("High risk of bias (major confounding factor)", "High risk of bias (major confounding factor and method description strongly insufficient)" )]) / nrow(data_critical_appraisal)) * 100, 2), "%")`
+), an inadequate methodology (
+`r paste0(round((nrow(data_critical_appraisal[Reasons_for_rejection %in% c("High risk of bias (inappropriate protocol)" )]) / nrow(data_critical_appraisal)) * 100, 2), "%")`
+), an absence of replication (
+`r paste0(round((nrow(data_critical_appraisal[Reasons_for_rejection %in% c("High risk of bias (no replication)" )]) / nrow(data_critical_appraisal)) * 100, 2), "%")`
+) and protocols varying between control and treatment (
+`r paste0(round((nrow(data_critical_appraisal[Reasons_for_rejection %in% c("High risk of bias (protocol varies between control and treatment)" )]) / nrow(data_critical_appraisal)) * 100, 2), "%")`
+) or between sites(
+`r paste0(round((nrow(data_critical_appraisal[Reasons_for_rejection %in% c("High risk of bias (protocol varies between sites)" )]) / nrow(data_critical_appraisal)) * 100, 2), "%")`
+).
+Thus, a total of `r N_studies_medium_low_bias` studies corresponding to `r N_articles_medium_low_bias` articles were
+retained after critical appraisal.
+Additional file **XXX** provides a list of all studies retained after the
+screening stage with coded metadata and their risk of bias assessed
+during critical appraisal. The number of studies of each level of bias for
+every subquestion and type of LTI is also given in Figure **XXX**.
+
+After the critical appraisal stage, `r nrow(data_synthesis[Included_in_narrative_synthesis == "Yes"])` studies with a low or medium risk of
+bias that reported statistical results for any subquestion except Q2 were further included in the narrative synthesis.
+The `r nrow(data_synthesis[LTI == "Road" & Specific_question == "Q2"])` studies with a low or medium risk of bias dealing with Q2
+were scanned separately for means and error measures for control and treatment
+sites in order to compute effect sizes for a meta-analysis on the role of
+habitat of LTI verges.
+Among them, `r nrow(data_synthesis[Included_in_metaanalysis == "Yes"])`
+studies provided the necessary data for *Species richness* and/or *Abundance*. 
+
+### Characteristics of the studies
+
+```{r}
+
+N_included_studies <- nrow(data_synthesis[Included_in_systematic_review == "Yes"])
+
+```
+
+Of the `r N_included_studies` with low or medium risk of bias,
+`r paste0(round((nrow(data_synthesis[Risk_of_bias == "low"]) / nrow(data_synthesis[Risk_of_bias %in% c("low", "medium")])) * 100, 2), "%")`
+had a low risk of bias (Figure **XXX**). The majority of studies dealt with the
+role of habitat of verges by comparing biodiversity within the boundaries of
+LTI verges to biodiversity in similar habitats away from the verges (Q2 ; 
+`r nrow(data_synthesis[Specific_question == "Q2" & Risk_of_bias %in% c("low", "medium")])`
+studies), and with the impact of management practices on the biodiversity hosted by
+comparing LTI verges under different management regimes or perturbation levels (Q1 ; 
+`r nrow(data_synthesis[Specific_question == "Q1" & Risk_of_bias %in% c("low", "medium")])`
+studies). A relatively high number of studies also investigated the effect of the surrounding landscape on the habitat role of verges (Q5 ;
+`r nrow(data_synthesis[Specific_question == "Q5" & Risk_of_bias %in% c("low", "medium")])`
+studies). 
+However, studies addressing the role of corridor of verges were very scarce. Indeed, there were only
+<!-- `r nrow(data_synthesis[Specific_question == "Q4" & Risk_of_bias %in% c("low", "medium")])` -->
+3 studies on the role of corridor of LTI verges (Q4), 
+<!-- `r nrow(data_synthesis[Specific_question == "Q3" & Risk_of_bias %in% c("low", "medium")])` -->
+1 study on the impact of management practices on the role of corridor and
+<!-- `r nrow(data_synthesis[Specific_question == "Q6" & Risk_of_bias %in% c("low", "medium")])` -->
+2 studies on the influence of the surrounding landscape.
+
+
+### Publication year
+
+The
+`r length(unique(data_synthesis$ID_doc))` articles retained after critical
+appraisal were published from `r min(data_synthesis[,Publication_year])`
+to `r max(data_synthesis[,Publication_year])` (**Figure XXX**).
+
+### Source
+
+Most of the
+`r nrow(data_synthesis)`
+studies retained after critical appraisal were retrieved from 
+Web Of Science Core Collection (
+`r nrow(data_synthesis[Source == "WOSCC"])`
+articles). Only 
+`r nrow(data_synthesis[Source == "ZR"])` studies
+came from Zoological Records and only
+`r nrow(data_synthesis[Source == "GoogleScholar"])`
+from Google Scholar.
+The call for grey litterature eventually led to
+`r nrow(data_synthesis[Source == "email request"])` studies
+being included in the final corpus and
+
+`r nrow(data_synthesis[Source == "ITTECOP"])`
+studies were also spontaneously sent to
+us. Lastly,
+`r nrow(data_synthesis[Source == "REVIEW2018"])`
+studies came from the review of Jakobsson et al. (2018) on the impact of
+management practices of road verges on biodiversity.
+
+
+### Language and type of article
+
+The vast majority of the studies included in the synthesis came from documents written in English
+(
+`r paste0(round(get_prct_cases(data_synthesis, "Language")$Percent_cases_English, 1), "%")`
+), the remainder being written in French.
+Almost articles included came from scientific journal (
+`r paste0(round(get_prct_cases(data_synthesis, "Article_Type")$Percent_cases_Article, 1), "%")`
+), but the review also included
+`r nrow(data_synthesis[Article_Type == "Technical_report"])` technical reports,
+`r nrow(data_synthesis[Article_Type == "PhD_thesis"])` PhD thesis chapters and
+`r nrow(data_synthesis[Article_Type == "Master_thesis"])` Master thesis chapters, as well as
+`r nrow(data_synthesis[Article_Type == "Talk"])` Powerpoint presentation and
+`r nrow(data_synthesis[Article_Type == "Book_chapter"])` book chapter.
+
+
+### Study location
+
+At country level, most of the `r N_included_studies` were done in the United States
+(
+`r paste0(round(get_prct_cases(data_synthesis, "Country")$Percent_cases_USA, 1), "%")`
+) and France (
+`r paste0(round(get_prct_cases(data_synthesis, "Country")$Percent_cases_France, 1), "%")`
+), then in Spain (
+`r paste0(round(get_prct_cases(data_synthesis, "Country")$Percent_cases_Spain, 1), "%")`
+), Australia (
+`r paste0(round(get_prct_cases(data_synthesis, "Country")$Percent_cases_Australia, 1), "%")`
+) or in the United Kingdom (
+`r paste0(round(get_prct_cases(data_synthesis, "Country")$Percent_cases_UK, 1), "%")`
+; see Figure **XXX** for a full list).
+
+
+### Study design
+
+Most studies included in the synthesis had a Control-Exposure (for questions Q2, Q4, Q5, Q6) or a Control-Intervention (for questions Q1 and Q3) design (respectively 
+`r paste0(round(get_prct_cases(data_synthesis, "Study_design")$Percent_cases_CE, 1), "%")` and
+`r paste0(round(get_prct_cases(data_synthesis, "Study_design")$Percent_cases_CI, 1), "%")`
+of the studies). Only
+`r paste0(round((100 - (get_prct_cases(data_synthesis, "Study_design")$Percent_cases_CI + get_prct_cases(data_synthesis, "Study_design")$Percent_cases_CE)), 1), "%")`
+of the studies however included a temporal control by assessing biodiversity
+both before and after the intervention/exposure.
+
+
+### Exposures
+
+The majority of the `r N_included_studies` studies were about roads (
+`r nrow(data_synthesis[LTI == "Road"])`
+). Waterways were the second most studied LTI with
+`r nrow(data_synthesis[LTI == "Waterway"])` studies. On the other hand, only
+`r nrow(data_synthesis[LTI == "Powerline"])`,
+`r nrow(data_synthesis[LTI == "Railway"])` and
+`r nrow(data_synthesis[LTI == "Pipeline"])` studies were done along powerlines,
+railways and pipelines respectively.
+
+
+## Data synthesis: quantitative syntheses
+
+```{r}
 
 N_studies_metaanalysis <- length(unique(data_metaanalysis$Author_date))
 N_cases_metaanalysis <- nrow(data_metaanalysis)
@@ -693,26 +794,24 @@ dt_number_of_studies_cases_LTI <- data_metaanalysis[, .(N_studies = uniqueN(Stud
 ### Description of the data
 
 We extracted quantitative data from `r N_studies_metaanalysis` among
-the `r N_studies_medium_low_bias` with low or medium risk of bias
+the `r N_studies_medium_low_bias` with a low or medium risk of bias
 addressing the specific question Q2 ("Is tracheophyte biodiversity in LTI
 verges equal to, higher, or lower than in similar habitats away from the
 LTIs?"). 
 Among the `r N_cases_metaanalysis` extracted from these 
-`r N_studies_metaanalysis`, 
-`r N_cases_metaanalysis_abundance` cases in 
-`r N_studies_metaanalysis_abundance` 
-studies concerned species or group abundance, and 
-`r N_cases_metaanalysis_species_richness`
-in `r N_studies_metaanalysis_species_richness` studies
-concerned species richness (Additional file ***XXX***).
+`r N_studies_metaanalysis`, `r N_cases_metaanalysis_abundance` cases in 
+`r N_studies_metaanalysis_abundance` studies concerned species or group abundance,
+and `r N_cases_metaanalysis_species_richness` in `r N_studies_metaanalysis_species_richness`
+studies concerned species richness (Additional file ***XXX***).
+
 We estimated the variance of cases with data imputation (*i.e.* filling missing
 variance by using the available data from the other studies) for
-`r nrow(data_metaanalysis[is.na(Measure_var_treatment),])` cases
-(
+`r nrow(data_metaanalysis[is.na(Measure_var_treatment),])` 
+cases (
 `r  paste0(round((nrow(data_metaanalysis[is.na(Measure_var_treatment) & Response_variable == "Abundance",]) / N_cases_metaanalysis_abundance) * 100, 1), "%")`
-of Abundance cases and 
+of *Abundance* cases and 
 `r  paste0(round((nrow(data_metaanalysis[is.na(Measure_var_treatment) & Response_variable == "Species_richness",]) / N_cases_metaanalysis_species_richness) * 100, 1), "%")`
-of Species richness cases).
+of *Species richness* cases).
 When several cases were extracted from the same study, this was because there
 was data for several species or group of species, for several sites, or for several years or seasons.
 
@@ -729,8 +828,8 @@ pipelines (
 `r paste0(round(get_prct_cases(data_metaanalysis, "ILT_analysis")$Percent_cases_Railway, 1), "%")`
 ).
 
-Cases were mostly from studies conducted in North America and Europe (North America:
-`r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_North_America, 2), "%")`
+Cases extracted for the meta-analysis were mostly from studies conducted in North America and Europe (North America:
+`r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_North_America, 1), "%")`
 , Europe:
 `r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_Europe , 1), "%")`
 , Oceania:
@@ -741,15 +840,12 @@ Cases were mostly from studies conducted in North America and Europe (North Amer
 `r paste0(round(get_prct_cases(data_metaanalysis, "Continent")$Percent_cases_Asia , 1), "%")`
 ).
 
+
 ### Meta-analyses and publication bias
 
-```{r}
-
-library(metafor)
-
-```
 
 ```{r}
+# %>% Grand Mean effect models
 
 GM <- rma.mv(
   yi=yi,
@@ -804,24 +900,727 @@ dt_GM_SR <- data.table(
   ci_supp = round(GM_SR$ci.ub, 2),
   ci_inf = round(GM_SR$ci.lb, 2),
   QE = GM_SR$QE,
-  QE_pvalue = ifelse(GM_SR$QEp == 0, "p < 0.0001", paste0("p = ", round(GM_SR$QEp, 2))),
+  QE_pvalue = ifelse(GM_SR$QEp < 0.001, "p < 0.001", paste0("p = ", round(GM_SR$QEp, 2))),
   N = GM_SR$k
 )
 
 dt_GM_results <- rbindlist(list(dt_GM, dt_GM_no_influential_cases, dt_GM_SR))
+
 ```
 
-For abundance, we found that, overall, vascular plants were **TODO: grand mean abundance**
+For abundance, overall we found that vascular plants were marginally less
+abundant on LTI compared to similar habitats away from verges (grand mean effect size 
+`r paste0("d=", dt_GM_results[1, Coeff])`,
+95% confidence interval (95% CI)
+`r paste0("[",dt_GM_results[1, ci_inf], ";", dt_GM_results[1, ci_supp], "]")`
+). However, this negative relationship could be attributed mainly to two highly
+influential cases (Cook's distance above 0.5) and when they were removed, the
+overall grand mean effect size became positive but was not statistically different
+from zero (
+`r paste0("d=", dt_GM_results[2, Coeff])`,
+95% CI
+`r paste0("[", dt_GM_results[2, ci_inf], ";", dt_GM_results[2, ci_supp], "]")`
+). Hence based on this more robust estimate, abundance on the verges did not
+seem to differ from the one observed in reference sites. We also found high heterogeneity
+between effect sizes (
+jk`r paste0("Q_T=",round(dt_GM_results[2, QE], 1), ", ", dt_GM_results[2, QE_pvalue], "N=", dt_GM_results[2, N])`
+), indicating that moderators could explain variations in effect sizes.
 
-(grand mean effect size `r paste0("d=", dt_GM$Coeff)`, 95%
-confidence interval (95% CI) 
-`r paste0("[", dt_GM$ci_inf, ";", dt_GM$ci_supp, "]")`
+For species richness, the overall mean effect size was not statistically different from 0 (
+`r paste0("d=", dt_GM_results[3, Coeff])`,
+95% CI
+`r paste0("[",dt_GM_results[3, ci_inf], ";", dt_GM_results[3, ci_supp], "]")`
+),
+meaning that LTI verges and reference sites also exhibited similar numbers of
+species overall. Again, we found a statistically significant heterogeneity in
+the effect sizes (
+`r paste0("Q_T=",round(dt_GM_results[3, QE], 1), ", ", dt_GM_results[3, QE_pvalue], "N=", dt_GM_results[2, N])`
 ).
 
 
+```{r}
+# %>% Risk of bias - funnel plots and Egger's tests
 
+# Number of cases and studies by Outcome / LTI
+# (data_metaanalysis[Global_analysis == "Yes", .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable, ILT_analysis)])
+
+# for Abundance
+data_metaanalysis$ILT_analysis <- factor(data_metaanalysis$ILT_analysis, levels=c("Highway","Non_Highway_road","Powerline", "Pipeline", "Railway"))
+data_metaanalysis <- data_metaanalysis[order(ILT_analysis, Status_analysis, yi),]
+mod <- rma.mv(
+    yi ~ ILT_analysis - 1, random = ~1 | Author_date/Case.ID, V=vi, 
+    data = data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway",],
+    method = "REML"
+)
+mod
+
+#resi <- rstudent(mod)$resid
+#mod$ni <- data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway",]$ni
+#par(mfrow=c(1,1))
+#funnel(resi, ni=mod$ni, yaxis = "ni", digits = 0, main = "Abundance", back="white")
+#mod$vi <- data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway",]$vi
+#regtest(x=resi, vi=mod$vi, ni=mod$ni, predictor="ni", model="lm")
+#
+# for Abundance without inflential cases
+mod <- rma.mv(
+    yi ~ ILT_analysis - 1, V=vi, random= ~1 | Author_date/Case.ID,
+    data=data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),],
+    method="REML"
+)
+mod
+
+resi <- rstudent(mod)$resid
+mod$ni <- data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),]$ni
+#par(mfrow=c(1,1))
+#funnel(resi, ni=mod$ni, yaxis = "ni", digits = 0, main = "Abundance", back="white", ylim=c(0, 200))
+mod$vi <-  data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),]$vi
+
+egger_test_abundance <- regtest(x=resi, vi=mod$vi, ni=mod$ni, predictor="ni", model="lm")
+egger_test_abundance_pval <- round(egger_test_abundance$pval, 2)
+
+## for Species richness
+mod <- rma.mv(yi ~ ILT_analysis - 1, random = ~1 | Author_date/Case.ID, V=vi, 
+             data = data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes" ,], method = "REML")
+mod
+
+resi <- rstudent(mod)$resid
+mod$ni <- data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",]$ni
+#par(mfrow=c(1,1))
+#funnel(resi, ni=mod$ni, yaxis = "ni", digits = 0, main = "Species_richness", back="white")
+mod$vi <- data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",]$vi
+egger_test_SR <- regtest(x=resi, vi=mod$vi, ni=mod$ni, predictor="ni", model="lm")
+egger_test_SR_pval <- egger_test_SR$pval.
+
+#data_metaanalysis[Response_variable == variable & Global_analysis == "Yes",][which(data_metaanalysis[Response_variable == variable & Global_analysis == "Yes",]$ni>300),]
+
+```
+
+```{r}
+# %>% Correlation effect size ~ year
+
+dotsize <- function(vi){
+  wi=1/(vi)
+  0.5 + 3 * (wi - min(wi))/(max(wi) - min(wi))
+}
+mygrey <- rgb(100,100,100,50,maxColor=255)
+
+# Correlation Abundance ~ Publication data
+rho_abundance_year <- with(data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes",],
+     cor.test(yi,date))
+rho_abundance_year_pval <- rho_abundance_year$p.value
+rho_abundance_year <- rho_abundance_year$estimate
+
+#summary(lm(yi  ~ date, data = data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes",]))
+
+# Correlation Species_richness ~ Publication data
+rho_SR_year <- with(data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",],
+     cor.test(yi,date))
+rho_SR_year_pval <- rho_SR_year$p.value
+rho_SR_year <- rho_SR_year$estimate
+
+#summary(lm(yi  ~ date, data = data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",]))
+#
+## %>% Plots of the mean cumulative meta-analysis by publication year
+#
+## for Abundance
+#CMA <- data.frame()
+## ordonne le fichier par annee de publication
+#d <- data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes",][order(date),]
+## Model with random Author_date/Case.ID on intercept
+#for(i in unique(d$date)[-1]){
+#  m <- rma.mv(yi=yi, V=vi, mods= ~1, random= ~1 | Author_date/Case.ID, data=d[date <= i,], method="REML")  
+#  CMA <- rbind(CMA, data.frame(
+#    Date = i, k = m$k, tau2 = m$tau2,
+#    b = m$b, ci.lb = m$ci.lb, ci.ub = m$ci.ub))
+#}
+#with(CMA, plot(b, as.integer(as.character(Date)), xlab = expression("Mean effect size " %+-% " 95% CI"), ylab = "", yaxt = "n", xlim=c(min(ci.lb),max(ci.ub+0.2)), main="Abundance"))
+#with(CMA, segments(ci.lb, as.integer(as.character(Date)), ci.ub, as.integer(as.character(Date)), lwd= 5, col= 'grey'))
+#with(CMA, points(b, as.integer(as.character(Date)), pch= 21, bg = 'white', cex = 1))
+#with(CMA, text(ci.ub, as.integer(as.character(Date)), pos= 4, labels = as.integer(as.character(Date)), cex = 1))
+#abline(v = 0, lty = 5)
+#
+#
+## for Species richness
+#d <- data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",][order(date),]
+#CMA <- data.frame()
+## Model with random Author_date/Case.ID on intercept
+#for(i in unique(d$date)[-1]){
+#  m <- rma.mv(yi=yi, V=vi, mods= ~1, random= ~1 | Author_date/Case.ID, data=d[date <= i,], method="REML")  
+#  CMA <- rbind(CMA, data.frame(
+#    Date = i, k = m$k, tau2 = m$tau2,
+#    b = m$b, ci.lb = m$ci.lb, ci.ub = m$ci.ub))
+#}
+#with(CMA, plot(b, as.integer(as.character(Date)), xlab = expression("Mean effect size " %+-% " 95% CI"), ylab = "", yaxt = "n", xlim=c(min(ci.lb),max(ci.ub+0.7)), main="Species_richness"))
+#with(CMA, segments(ci.lb, as.integer(as.character(Date)), ci.ub, as.integer(as.character(Date)), lwd= 5, col= 'grey'))
+#with(CMA, points(b, as.integer(as.character(Date)), pch= 21, bg = 'white', cex = 1))
+#with(CMA, text(ci.ub, as.integer(as.character(Date)), pos= 4, labels = as.integer(as.character(Date)), cex = 1))
+#abline(v = 0, lty = 5)
+
+```
+
+There was no striking evidence of publication bias neither for abundance nor
+for species richness from the funnel plots and the plot of the cumulative
+meta-analysis by publication year (Additional file **XXX**).
+Egger’s regression test for funnel plot asymmetry indicated that
+there was no statistically significant asymmetry neither for abundance (P-value = `r egger_test_abundance_pval`) and species richness (P-value = `r egger_test_SR_pval`).
+Similarly, publication was not significantly correlated to publication year, neither for abundance (`r paste0("r=", rho_abundance_year)`, `r paste0("P-value=", rho_abundance_year_pval)`),
+nor for species richness (`r paste0("r=", rho_SR_year)`, `r paste0("P-value=", rho_SR_year_pval)`).
+Finally, we did not detect any influence of the risk of bias of the study (low
+or medium) on effect sizes (after removing the effect of type of LTI) for none
+of the outcome category.
+
+```{r}
+# %>% Effect of risk of bias level
+
+## for Abundance
+#with(droplevels(data_metaanalysis[Response_variable == "Abundance",]), table(Bias, ILT_analysis))
+#with(droplevels(data_metaanalysis[Response_variable == "Abundance",]), chisq.test(Bias, ILT_analysis))
+##with(droplevels(data_metaanalysis[Response_variable == "Abundance",]), montestchi2(table(Bias, ILT_analysis)))
+#
+#mdd <- rma.mv(yi ~ Bias -  1, random = ~1 | Author_date/Case.ID, V=vi, data = data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway",], method = "REML")
+#mod <- rma.mv(yi ~ ILT_analysis -  1, random = ~1 | Author_date/Case.ID, V=vi, data = data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway",], method = "REML")
+#resi <- rstudent(mod)$resid
+#mdddat <- cbind(data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway",], resi)
+#rma.mv(resi ~ Bias -  1, random = ~1 | Author_date/Case.ID, V=vi, data = mdddat, method = "REML")
+#
+#mdd <- rma.mv(yi ~ Bias -  1, random = ~1 | Author_date/Case.ID, V=vi, data = data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),], method = "REML")
+#mod <- rma.mv(yi ~ ILT_analysis -  1, random = ~1 | Author_date/Case.ID, V=vi, data = data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),], method = "REML")
+#resi <- rstudent(mod)$resid
+#mdddat <- cbind(data_metaanalysis[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),], resi)
+#rma.mv(resi ~ Bias -  1, random = ~1 | Author_date/Case.ID, V=vi, data = mdddat, method = "REML")
+#
+#par(mfrow=c(2,2))
+#plot(mdddat$yi ~ as.factor(mdddat$Bias))
+#plot(mdddat$resi ~ as.factor(mdddat$Bias))
+#
+## for Species richness
+#with(droplevels(data_metaanalysis[Response_variable == "Species_richness",]), table(Bias, ILT_analysis))
+#with(droplevels(data_metaanalysis[Response_variable == "Species_richness",]), chisq.test(Bias, ILT_analysis))
+##with(droplevels(data_metaanalysis[Response_variable == "Species_richness",]), montestchi2(table(Bias, ILT_analysis)))
+#
+#mdd <- rma.mv(yi ~ Bias -  1, random = ~1 | Author_date/Case.ID, V=vi, data = data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",], method = "REML")
+#mod <- rma.mv(yi ~ ILT_analysis -  1, random = ~1 | Author_date/Case.ID, V=vi, data = data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",], method = "REML")
+#resi <- rstudent(mod)$resid
+#mdddat <- cbind(data_metaanalysis[Response_variable == "Species_richness" & Global_analysis == "Yes",], resi)
+#rma.mv(resi ~ Bias -  1, random = ~1 | Author_date/Case.ID, V=vi, data = mdddat, method = "REML")
+#
+
+```
+
+### Effects of moderators on abundance
+
+
+### Effects of moderators on species richness
+
+
+```{r}
+## %>% Effect of moderators
+#
+#data_metaanalysis[Global_analysis == "Yes" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"), .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable, ILT_analysis)]
+#
+#data_metaanalysis[Status_analysis %in% c("Native", "Exotic"), .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable, Status_analysis, ILT_analysis)]
+#
+##!#!#!#!#!#!#!#!#!#!  FONCTIONS #!#!#!#!#!#!#!#!#!#!  
+### fonction pour faire le plot des moderateurs automatiquement (from Isabelle Witte)
+#plot.coefs <- function(x, data, col = "lightblue", pch = 21, bg = "white", 
+#                       cex = 1.4, lty = 1, lwd = 5, xlab = '', titre, my_ylim=FALSE, ylimi,
+#                       ylab = expression("Estimated effect size " %+-% " 95% CI")){
+#  b = data$b
+#  ci.lb = data$ci.lb
+#  ci.ub = data$ci.ub
+#  #ylim= c((min(ci.lb)-.25*(max(ci.ub)-min(ci.lb))), max(ci.ub))  
+#  if(my_ylim == TRUE){
+#    plot(x, b, xlim= c(min(x) - 0.5, max(x) + 0.5), ylim=ylimi, ylab = ylab, xlab = xlab, xaxt = 'n', main = titre)
+#  }else{
+#    plot(x, b, xlim= c(min(x) - 0.5, max(x) + 0.5), ylim=c(min((min(ci.lb)-.25*(max(ci.ub)-min(ci.lb))),-1.5),max(ci.ub)), ylab = ylab, xlab = xlab, xaxt = 'n', main = titre)
+#  }
+#  segments(x, ci.lb, x, ci.ub, lwd = lwd, col = col, lty = lty)
+#  points(x, b, pch= 21, cex = 1, bg = bg)
+#}
+#
+##!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#! 
+#
+#coul <- brewer.pal(9, "BuPu") 
+#coula <- brewer.pal(9, "Blues")
+#coulb <- brewer.pal(5, "Oranges")
+#
+#dat <- data_metaanalysis
+#dat$ILT_analysis <- factor(dat$ILT_analysis, levels=c("Highway","Non_Highway_road","Powerline", "Pipeline", "Railway"))
+#dat$Status_analysis <- factor(dat$Status_analysis, levels=c("Mixed","Exotic","Native"))
+#dat[Status_analysis == "Mixed", color := coulb[4]]
+#dat[Status_analysis == "Native", color := coula[8]]
+#dat[Status_analysis == "Exotic", color := coula[5]]
+#dat[Status_analysis == "Mixed", tpch := 16]
+#dat[Status_analysis == "Native", tpch := 15]
+#dat[Status_analysis == "Exotic", tpch := 18]
+#dat <- dat[order(ILT_analysis, Status_analysis, yi),]
+#
+## -- ILT for global data
+### Abundance
+#mod1 <- rma.mv(yi ~ ILT_analysis - 1, random = ~1 | Author_date/Case.ID, V=vi, 
+#              data = dat[Global_analysis == "Yes" & Response_variable == "Abundance" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2") & ILT_analysis != "Railway",], method = "REML")
+#mod1
+#
+#dt_results_mod1_model <- data.table(
+#    Model_ID = "Global / ILT - Abundance",
+#    QM =mod1$QM,
+#    QM_pvalue = ifelse(mod1$QM == 0, "p < 0.0001", paste0("p = ", round(mod1$QMp, 2))),
+#    QE =mod1$QE,
+#    QE_pvalue = ifelse(mod1$QEp == 0, "p < 0.0001", paste0("p = ", round(mod1$QEp, 2))),
+#    N = mod1$k
+#)
+#
+#dt_results_mod1_coeff <- data.table(
+#    LTI = substr(names(coef(mod1)),13,50),
+#    Coeff = round(coef(mod1), 2),
+#    ci_supp = round(mod1$ci.ub, 2),
+#    ci_inf = round(mod1$ci.lb, 2),
+#    N = dat[Response_variable == "Abundance" & Global_analysis == "Yes" & ILT_analysis != "Railway" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"), .(group = .N), keyby = .(ILT_analysis)][,2]
+#)
+#
+#
+### Species richness
+#mod2 <- rma.mv(yi ~ ILT_analysis - 1, random = ~1 | Author_date/Case.ID, V=vi, 
+#              data = dat[Global_analysis == "Yes" & Response_variable == "Species_richness",], method = "REML")
+#mod2
+#
+#dt_results_mod2_model <- data.table(
+#    Model_ID = "Global / ILT - Species richness",
+#    QM =mod2$QM,
+#    QM_pvalue = ifelse(mod2$QM == 0, "p < 0.0001", paste0("p = ", round(mod2$QMp, 2))),
+#    QE =mod2$QE,
+#    QE_pvalue = ifelse(mod2$QEp == 0, "p < 0.0001", paste0("p = ", round(mod2$QEp, 2))),
+#    N = mod2$k
+#)
+#
+#dt_results_mod2_coeff <- data.table(
+#    LTI = substr(names(coef(mod2)),13,50),
+#    Coeff = round(coef(mod2), 2),
+#    ci_supp = round(mod2$ci.ub, 2),
+#    ci_inf = round(mod2$ci.lb, 2),
+#    N = dat[Response_variable == "Species_richness" & Global_analysis == "Yes", .(group = .N), keyby = .(ILT_analysis)][,2]
+#)
+#
+#
+## -- ILT / Plant status
+### Abundance
+#
+## Non_Highway_road 
+#mod3 <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = dat[ILT_analysis == "Non_Highway_road" & Status_analysis %in% c("Exotic", "Native") & Response_variable == "Abundance",], method = "REML")
+#mod3
+#
+#dt_results_mod3_model <- data.table(
+#    Model_ID = "Road / Status - Abundance",
+#    QM =mod3$QM,
+#    QM_pvalue = ifelse(mod3$QM == 0, "p < 0.0001", paste0("p = ", round(mod3$QMp, 2))),
+#    QE =mod3$QE,
+#    QE_pvalue = ifelse(mod3$QEp == 0, "p < 0.0001", paste0("p = ", round(mod3$QEp, 2))),
+#    N = mod3$k
+#)
+#
+#dt_results_mod3_coeff <- data.table(
+#    LTI = substr(names(coef(mod3)),16,50),
+#    Coeff = round(coef(mod3), 2),
+#    ci_supp = round(mod3$ci.ub, 2),
+#    ci_inf = round(mod3$ci.lb, 2),
+#    N = dat[Response_variable == "Abundance" & ILT_analysis == "Non_Highway_road" & Status_analysis %in% c("Native", "Exotic"), .(group = .N), keyby = .(Status_analysis)][,2]
+#)
+#
+## Powerlines
+#mod4 <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = dat[ILT_analysis == "Powerline" & Status_analysis %in% c("Exotic", "Native") & Response_variable == "Abundance",], method = "REML")
+#mod4
+#
+#dt_results_mod4_model <- data.table(
+#    Model_ID = "Powerline / Status - Abundance",
+#    QM =mod4$QM,
+#    QM_pvalue = ifelse(mod4$QM == 0, "p < 0.0001", paste0("p = ", round(mod4$QMp, 2))),
+#    QE =mod4$QE,
+#    QE_pvalue = ifelse(mod4$QEp == 0, "p < 0.0001", paste0("p = ", round(mod4$QEp, 2))),
+#    N = mod4$k
+#)
+#
+#dt_results_mod4_coeff <- data.table(
+#    LTI = substr(names(coef(mod4)),16,50),
+#    Coeff = round(coef(mod4), 2),
+#    ci_supp = round(mod4$ci.ub, 2),
+#    ci_inf = round(mod4$ci.lb, 2),
+#    N = dat[Response_variable == "Abundance" & ILT_analysis == "Powerline" & Status_analysis %in% c("Native", "Exotic"), .(group = .N), keyby = .(Status_analysis)][,2]
+#)
+#
+### Species richness
+## Non Highway roads
+#mod5 <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = dat[ILT_analysis == "Non_Highway_road" & Status_analysis %in% c("Exotic", "Native") & Response_variable == "Species_richness",], method = "REML")
+#mod5
+#
+#dt_results_mod5_model <- data.table(
+#    Model_ID = "Road / Status - SR",
+#    QM =mod5$QM,
+#    QM_pvalue = ifelse(mod5$QMp < 0.001, "p < 0.001", paste0("p = ", round(mod5$QMp, 2))),
+#    QE =mod5$QE,
+#    QE_pvalue = ifelse(mod5$QEp < 0.001, "p < 0.001", paste0("p = ", round(mod5$QEp, 2))),
+#    N = mod5$k
+#)
+#
+#dt_results_mod5_coeff <- data.table(
+#    LTI = substr(names(coef(mod5)),16,50),
+#    Coeff = round(coef(mod5), 2),
+#    ci_supp = round(mod5$ci.ub, 2),
+#    ci_inf = round(mod5$ci.lb, 2),
+#    pval = round(mod5$pval, 2),
+#    N = dat[Response_variable == "Species_richness" & ILT_analysis == "Non_Highway_road" & Status_analysis %in% c("Native", "Exotic"), .(group = .N), keyby = .(Status_analysis)][,2]
+#)
+#
+#dt_results_models <- rbind(
+#    dt_results_mod1_model,
+#    dt_results_mod2_model,
+#    dt_results_mod3_model,
+#    dt_results_mod4_model,
+#    dt_results_mod5_model
+#)
+#
+```
+
+```{r}
+# %>% Plot effect sizes by ILT and ILT / Status
+
+
+###!#!#!#!#!#!#!#!#!#!  FONCTIONS #!#!#!#!#!#!#!#!#!#!  
+### fonction pour faire le plot des moderateurs automatiquement (from Isabelle Witte)
+#plot.coefs <- function(x, data, col = "lightblue", pch = 21, bg = "white", 
+#                       cex = 1.4, lty = 1, lwd = 5, xlab = '', titre, my_ylim=FALSE, ylimi,
+#                       ylab = expression("Estimated effect size " %+-% " 95% CI")){
+#  b = data$b
+#  ci.lb = data$ci.lb
+#  ci.ub = data$ci.ub
+#  #ylim= c((min(ci.lb)-.25*(max(ci.ub)-min(ci.lb))), max(ci.ub))  
+#  if(my_ylim == TRUE){
+#    plot(x, b, xlim= c(min(x) - 0.5, max(x) + 0.5), ylim=ylimi, ylab = ylab, xlab = xlab, xaxt = 'n', main = titre)
+#  }else{
+#    plot(x, b, xlim= c(min(x) - 0.5, max(x) + 0.5), ylim=c(min((min(ci.lb)-.25*(max(ci.ub)-min(ci.lb))),-1.5),max(ci.ub)), ylab = ylab, xlab = xlab, xaxt = 'n', main = titre)
+#  }
+#  segments(x, ci.lb, x, ci.ub, lwd = lwd, col = col, lty = lty)
+#  points(x, b, pch= 21, cex = 1, bg = bg)
+#}
+#
+##!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#! 
+#
+#coul <- brewer.pal(9, "BuPu") 
+#coula <- brewer.pal(9, "Blues")
+#coulb <- brewer.pal(5, "Oranges")
+#
+## Data for plots
+#data_plot <- data_metaanalysis
+#
+#data_plot$ILT_analysis <- factor(data_plot$ILT_analysis, levels=c("Highway","Non_Highway_road","Powerline", "Pipeline", "Railway"))
+#data_plot$Status_analysis <- factor(data_plot$Status_analysis, levels=c("Mixed","Exotic","Native"))
+#data_plot[Status_analysis == "Mixed", color := coulb[4]]
+#data_plot[Status_analysis == "Native", color := coula[8]]
+#data_plot[Status_analysis == "Exotic", color := coula[5]]
+#data_plot[Status_analysis == "Mixed", tpch := 16]
+#data_plot[Status_analysis == "Native", tpch := 15]
+#data_plot[Status_analysis == "Exotic", tpch := 18]
+#data_plot <- data_plot[order(ILT_analysis, Status_analysis, yi),]
+#
+## Global -- ILT analysis
+### Abundance
+#
+#mod1 <- rma.mv(yi ~ ILT_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, 
+#              data = data_plot[Response_variable == "Abundance" & Global_analysis == "Yes" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2") & ILT_analysis != "Railway",], method = "REML")
+#mod1
+#
+### Species_richness
+#mod1b <- rma.mv(yi ~ ILT_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, 
+#              data = data_plot[Global_analysis == "Yes" & Response_variable == "Species_richness",], method = "REML")
+#mod1b
+#
+## ILT / Native - Exotic
+#
+### Abundance
+## Exotic/Native on "Non_Highway_road"
+#mod2 <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = data_plot[Response_variable == "Abundance" & ILT_analysis == "Non_Highway_road" & Status_analysis %in% c("Exotic", "Native"),], method = "REML")
+#mod2
+#
+## Exotic/Native on "Powerline"
+#mod3 <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = data_plot[Response_variable == "Abundance" & ILT_analysis == "Powerline" & Status_analysis %in% c("Exotic", "Native") & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),], method = "REML")
+#mod3
+#
+## Native on "Pipeline"
+#mod4 <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = data_plot[Response_variable == "Abundance" & Status_analysis == "Native" & ILT_analysis == "Pipeline" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"),], method = "REML")
+#mod4
+#
+### Species richness 
+## Exotic/Native on "Non_Highway_road"
+#mod2b <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = data_plot[ILT_analysis == "Non_Highway_road" & Response_variable == "Species_richness" & Status_analysis %in% c("Exotic", "Native"),], method = "REML")
+#mod2b
+#
+## Native on "Highway"
+#mod3b <- rma.mv(yi ~ Status_analysis-1, random = ~1 | Author_date/Case.ID, V=vi, data = data_plot[Response_variable == "Species_richness" & ILT_analysis == "Highway" & Status_analysis == "Native",], method = "REML")
+#mod3b
+#
+## Combining data for different models
+### Abundance
+#datacoef_global_Abundance <- data.table(
+#    ilt=substr(names(coef(mod1)),13,50), 
+#    groups="All",
+#    b=coef(mod1),
+#    ci.lb=mod1$ci.lb,
+#    ci.ub=mod1$ci.ub,
+#    pval=mod1$pval  
+#)
+#datacoef_global_Abundance[,N := colSums(mod1$X)]
+#N_studies_Abundance <- c(
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Highway" & Global_analysis == "Yes"]$Study.ID),
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Non_Highway_road" & Global_analysis == "Yes"]$Study.ID),
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Powerline" & Global_analysis == "Yes"  & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2")]$Study.ID),
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Pipeline" & Global_analysis == "Yes"]$Study.ID)
+#)
+#datacoef_global_Abundance[, N_indep := N_studies_Abundance]
+#datacoef_global_Abundance[groups == "All", color := coulb[4]]
+#
+#
+#datacoef_status_Abundance <- rbind(
+#  data.frame(ilt="Non_Highway_road",groups=substr(names(coef(mod2)),16,50), b=coef(mod2), ci.lb=mod2$ci.lb, ci.ub=mod2$ci.ub, pval=mod2$pval),
+#  data.frame(ilt="Powerline",groups=substr(names(coef(mod3)),16,50), b=coef(mod3), ci.lb=mod3$ci.lb, ci.ub=mod3$ci.ub, pval=mod3$pval),
+#  data.frame(ilt="Pipeline",groups="Native", b=coef(mod4), ci.lb=mod4$ci.lb, ci.ub=mod4$ci.ub, pval=mod4$pval)
+#)
+#datacoef_status_Abundance <- data.table(datacoef_status_Abundance)
+#datacoef_status_Abundance[,N := c(colSums(mod2$X),colSums(mod3$X), colSums(mod4$X))]
+#datacoef_status_Abundance <- datacoef_status_Abundance[order(ilt),]
+#N_studies <- c(
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Non_Highway_road" & Status_analysis == "Exotic"]$Author_date),
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Non_Highway_road" & Status_analysis == "Native"]$Author_date),
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Pipeline" & Status_analysis == "Native"]$Author_date),
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Powerline" & Status_analysis == "Exotic"]$Author_date),
+#    uniqueN(data_plot[Response_variable == "Abundance" & ILT_analysis == "Powerline" & Status_analysis == "Native"]$Author_date)
+#)
+#datacoef_status_Abundance[, N_indep := N_studies]
+#datacoef_status_Abundance[groups == "Native", color := coula[8]]
+#datacoef_status_Abundance[groups == "Exotic", color := coula[5]]
+#
+### Species richness
+#datacoef_global_SR <- data.table(
+#    ilt=substr(names(coef(mod1b)),13,50), 
+#    groups="All",
+#    b=coef(mod1b),
+#    ci.lb=mod1b$ci.lb,
+#    ci.ub=mod1b$ci.ub,
+#    pval=mod1b$pval  
+#)
+#datacoef_global_SR[,N := colSums(mod1b$X)]
+#N_studies_SR <- c(
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Highway" & Global_analysis == "Yes"]$Study.ID),
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Non_Highway_road" & Global_analysis == "Yes"]$Study.ID),
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Powerline" & Global_analysis == "Yes"]$Study.ID),
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Pipeline" & Global_analysis == "Yes"]$Study.ID),
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Railway" & Global_analysis == "Yes"]$Study.ID)
+#)
+#datacoef_global_SR[, N_indep := N_studies_SR]
+#datacoef_global_SR[groups == "All", color := coulb[4]]
+#
+#datacoef_status_SR <- rbind(
+#  data.frame(ilt="Non_Highway_road",groups=substr(names(coef(mod2b)),16,50), b=coef(mod2b), ci.lb=mod2b$ci.lb, ci.ub=mod2b$ci.ub, pval=mod2b$pval),
+#  data.frame(ilt="Highway",groups="Native", b=coef(mod3b), ci.lb=mod3b$ci.lb, ci.ub=mod3b$ci.ub, pval=mod3b$pval)
+#)
+#datacoef_status_SR <- data.table(datacoef_status_SR)
+#datacoef_status_SR[,N := c(colSums(mod2b$X),colSums(mod3b$X))]
+#datacoef_status_SR <- datacoef_status_SR[order(ilt),]
+#N_studies <- c(
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Non_Highway_road" & Status_analysis == "Native"]$Author_date),
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Non_Highway_road" & Status_analysis == "Exotic"]$Author_date),
+#    uniqueN(data_plot[Response_variable == "Species_richness" & ILT_analysis == "Highway" & Status_analysis == "Native"]$Author_date)
+#)
+#datacoef_status_SR[, N_indep := N_studies]
+#datacoef_status_SR[groups == "Native", color := coula[9]]
+#datacoef_status_SR[groups == "Exotic", color := coula[5]]
+#
+## Plots effect size - Abundance
+#
+## Global / LTI
+##png("Figure_ModelEffectSize_Abundance_final.png", width = 480*1.95, height = 480)
+#png("figAbondance_Global.png", width = 480*1.95, height = 480)
+#
+#par(mar=c(1,5,1,1), las= 1, bty= 'n', cex.lab=2, cex.axis=2)
+#plot.coefs(1:nrow(datacoef_global_Abundance),data=datacoef_global_Abundance, titre="", lwd=datacoef_global_Abundance$N/sum(datacoef_global_Abundance$N)*50, col=datacoef_global_Abundance$color, my_ylim = TRUE, ylimi=c(-8,6))
+#points(which(datacoef_global_Abundance$groups == "All"), datacoef_global_Abundance[groups == "All",]$b, pch=21, bg="white", cex=1.8)
+##points(which(datacoef_global_Abundance$groups == "Native"), datacoef_global_Abundance[groups == "Native",]$b, pch=22, cex=1.8, bg="white")
+##points(which(datacoef_global_Abundance$groups == "Exotic"), datacoef_global_Abundance[groups == "Exotic",]$b, pch=23, cex=1.8, bg="white")
+#abline(h=0)
+#abline(v=c(1+0.5,
+#           2+0.5,
+#           3+0.5), lty=3, col=8)
+#text(c(0.6,
+#       1+0.6,
+#       2+0.7,
+#       3+0.6),
+#     rep(-7.2,4), c("Highways","Non highway\n    roads","Pipeline","Powerline"), pos=4, cex=1.4)
+#text(1:nrow(datacoef_global_Abundance),rep(-6,nrow(datacoef_global_Abundance)),
+#     c(paste(datacoef_global_Abundance[ilt == "Highway"]$N,
+#          "(",
+#          datacoef_global_Abundance[ilt == "Highway"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_global_Abundance[ilt == "Non_Highway_road"]$N,
+#          "(",
+#          datacoef_global_Abundance[ilt == "Non_Highway_road"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_global_Abundance[ilt == "Pipeline"]$N,
+#          "(",
+#          datacoef_global_Abundance[ilt == "Pipeline"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_global_Abundance[ilt == "Powerline"]$N,
+#          "(",
+#          datacoef_global_Abundance[ilt == "Powerline"]$N_indep,
+#          ")",
+#          sep="")
+#     ), cex=1.6
+#)
+#text(which(datacoef_global_Abundance$pval < 0.05), -5.8, "*", pos=1, cex=2.2)
+#
+#dev.off()  
+#
+#png("figAbondance_Status.png", width = 480*1.95, height = 480)
+#
+#par(mar=c(1,5,1,1), las= 1, bty= 'n', cex.lab=2, cex.axis=2)
+#plot.coefs(1:nrow(datacoef_status_Abundance),data=datacoef_status_Abundance, titre="", lwd=datacoef_status_Abundance$N/sum(datacoef_status_Abundance$N)*50, col=datacoef_status_Abundance$color, my_ylim = TRUE, ylimi=c(-8,6))
+#points(which(datacoef_status_Abundance$groups == "Native"), datacoef_status_Abundance[groups == "Native",]$b, pch=22, cex=1.8, bg="white")
+#points(which(datacoef_status_Abundance$groups == "Exotic"), datacoef_status_Abundance[groups == "Exotic",]$b, pch=23, cex=1.8, bg="white")
+#abline(h=0)
+#abline(v=c(2+0.5,
+#           3+0.5), lty=3, col=8)
+#text(c(1,
+#       2+0.6,
+#       3.5+0.6),
+#     rep(-7.4,4), c("Non highway\n    roads","Pipeline","Powerline"), pos=4, cex=1.4)
+#legend(0.1,6.5, lty=1, lwd=6, col=c(coula[8], coula[5]), legend=c("Native","Exotic"), bty="n", cex=1.6)
+#legend(0.36,6.5, pch=c(21,22,23), pt.bg=0, pt.cex=1.4,legend=c("",""), bty="n", cex=1.6)
+#text(1:nrow(datacoef_status_Abundance),rep(-6,nrow(datacoef_status_Abundance)),
+#     c(paste(datacoef_status_Abundance[ilt == "Non_Highway_road"]$N,
+#          "(",
+#          datacoef_status_Abundance[ilt == "Non_Highway_road"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_status_Abundance[ilt == "Pipeline"]$N,
+#          "(",
+#          datacoef_status_Abundance[ilt == "Pipeline"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_status_Abundance[ilt == "Powerline"]$N,
+#          "(",
+#          datacoef_status_Abundance[ilt == "Powerline"]$N_indep,
+#          ")",
+#          sep="")
+#     ), cex=1.4
+#)
+#text(which(datacoef_status_Abundance$pval < 0.05), -4.8, "*", pos=1, cex=2.2)
+#
+#dev.off()  
+#
+## Plots effect size - Species richness
+#
+#png("figSR_Global.png", width = 480*1.95, height = 480)
+#
+#par(mar=c(1,5,1,1), las= 1, bty= 'n', cex.lab=2, cex.axis=2)
+#plot.coefs(1:nrow(datacoef_global_SR),data=datacoef_global_SR, titre="", lwd=datacoef_global_SR$N/sum(datacoef_global_SR$N)*50, col=datacoef_global_SR$color, my_ylim = TRUE, ylimi=c(-7,6))
+#points(which(datacoef_global_SR$groups == "All"), datacoef_global_SR[groups == "All",]$b, pch=21, bg="white", cex=1.8)
+##points(which(datacoef_global_SR$groups == "Native"), datacoef_global_SR[groups == "Native",]$b, pch=22, cex=1.8, bg="white")
+##points(which(datacoef_global_SR$groups == "Exotic"), datacoef_global_SR[groups == "Exotic",]$b, pch=23, cex=1.8, bg="white")
+#abline(h=0)
+#abline(v=c(1+0.5,
+#           2+0.7,
+#           3+0.5,
+#           4+0.5), lty=3, col=8)
+#text(c(0.6,
+#       1+0.6,
+#       2+0.7,
+#       3+0.6,
+#       4+0.6),
+#     rep(-6.2,4), c("Highways","Non highway\n    roads","Powerline","Pipeline", "Railway"), pos=4, cex=1.4)
+#text(1:nrow(datacoef_global_SR),rep(-4.8,nrow(datacoef_global_SR)),
+#     c(paste(datacoef_global_SR[ilt == "Highway"]$N,
+#          "(",
+#          datacoef_global_SR[ilt == "Highway"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_global_SR[ilt == "Non_Highway_road"]$N,
+#          "(",
+#          datacoef_global_SR[ilt == "Non_Highway_road"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_global_SR[ilt == "Powerline"]$N,
+#          "(",
+#          datacoef_global_SR[ilt == "Powerline"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_global_SR[ilt == "Pipeline"]$N,
+#          "(",
+#          datacoef_global_SR[ilt == "Pipeline"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_global_SR[ilt == "Railway"]$N,
+#          "(",
+#          datacoef_global_SR[ilt == "Railway"]$N_indep,
+#          ")",
+#          sep="")
+#     ), cex=1.4
+#)
+#text(which(datacoef_global_SR$pval < 0.05), -5.8, "*", pos=1, cex=2.2)
+#
+#dev.off()  
+#
+## ILT / Plant status
+#png("figSR_Status.png", width = 480*1.95, height = 480)
+#
+#par(mar=c(1,5,1,1), las= 1, bty= 'n', cex.lab=2, cex.axis=2)
+#plot.coefs(1:nrow(datacoef_status_SR),data=datacoef_status_SR, titre="", lwd=datacoef_status_SR$N/sum(datacoef_status_SR$N)*50, col=datacoef_status_SR$color, my_ylim = TRUE, ylimi=c(-5,6))
+#points(which(datacoef_status_SR$groups == "Native"), datacoef_status_SR[groups == "Native",]$b, pch=22, cex=1.8, bg="white")
+#points(which(datacoef_status_SR$groups == "Exotic"), datacoef_status_SR[groups == "Exotic",]$b, pch=23, cex=1.8, bg="white")
+#abline(h=0)
+#abline(v=1.5, lty=3, col=8)
+#text(c(0.8,       
+#       1.5+0.6),
+#     rep(-4.5,4), c("Highway", "Non highway\n    roads"), pos=4, cex=1.4)
+#legend(0.4,6.5, lty=1, lwd=6, col=c(coula[9], coula[5]), legend=c("Native","Exotic"), bty="n", cex=1.6)
+#legend(0.5,6.5, pch=c(22,23), pt.bg=0, pt.cex=1.4,legend=c("",""), bty="n", cex=1.6)
+#text(1:nrow(datacoef_status_SR),rep(-3.3,nrow(datacoef_status_SR)),
+#     c(paste(datacoef_status_SR[ilt == "Highway"]$N,
+#          "(",
+#          datacoef_status_SR[ilt == "Highway"]$N_indep,
+#          ")",
+#          sep=""),
+#     paste(datacoef_status_SR[ilt == "Non_Highway_road"]$N,
+#          "(",
+#          datacoef_status_SR[ilt == "Non_Highway_road"]$N_indep,
+#          ")",
+#          sep="")
+#     ), cex=1.4
+#)
+#text(which(datacoef_status_SR$pval < 0.05), -2.4, "*", pos=1, cex=2.2)
+#
+#dev.off()  
+
+```
+ 
 # References
 
 ::: {#refs}
 :::
+
+
+```{r}
+## Specific question
+## Risk_of_bias
+#
+#View(head(data_synthesis))
+#
+#library(ggplot2)
+#
+#ggplot(data = data_synthesis) +
+#    geom_bar(mapping = aes(x = Specific_question, fill = Risk_of_bias))
+#
+#ggplot(data = data_synthesis) +
+#    geom_bar(mapping = aes(x = , fill = Risk_of_bias))
+#
+```
 
