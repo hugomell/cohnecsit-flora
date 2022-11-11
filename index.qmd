@@ -1072,7 +1072,7 @@ of the outcome category.
 ```{r}
 # %>% Effect of risk of bias level
 
-## for Abundance
+# for Abundance
 #with(droplevels(data_metaanalysis[Response_variable == "Abundance",]), table(Bias, ILT_analysis))
 #with(droplevels(data_metaanalysis[Response_variable == "Abundance",]), chisq.test(Bias, ILT_analysis))
 ##with(droplevels(data_metaanalysis[Response_variable == "Abundance",]), montestchi2(table(Bias, ILT_analysis)))
@@ -1107,19 +1107,10 @@ of the outcome category.
 
 ```
 
-### Effects of moderators on abundance
-
-
-### Effects of moderators on species richness
-
 
 ```{r}
-## %>% Effect of moderators
-#
-#data_metaanalysis[Global_analysis == "Yes" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"), .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable, ILT_analysis)]
-#
-#data_metaanalysis[Status_analysis %in% c("Native", "Exotic"), .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable, Status_analysis, ILT_analysis)]
-#
+# %>% Effect of moderators
+
 ##!#!#!#!#!#!#!#!#!#!  FONCTIONS #!#!#!#!#!#!#!#!#!#!  
 ### fonction pour faire le plot des moderateurs automatiquement (from Isabelle Witte)
 #plot.coefs <- function(x, data, col = "lightblue", pch = 21, bg = "white", 
@@ -1139,37 +1130,40 @@ of the outcome category.
 #}
 #
 ##!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#! 
-#
-#coul <- brewer.pal(9, "BuPu") 
-#coula <- brewer.pal(9, "Blues")
-#coulb <- brewer.pal(5, "Oranges")
-#
-#dat <- data_metaanalysis
-#dat$ILT_analysis <- factor(dat$ILT_analysis, levels=c("Highway","Non_Highway_road","Powerline", "Pipeline", "Railway"))
-#dat$Status_analysis <- factor(dat$Status_analysis, levels=c("Mixed","Exotic","Native"))
-#dat[Status_analysis == "Mixed", color := coulb[4]]
-#dat[Status_analysis == "Native", color := coula[8]]
-#dat[Status_analysis == "Exotic", color := coula[5]]
-#dat[Status_analysis == "Mixed", tpch := 16]
-#dat[Status_analysis == "Native", tpch := 15]
-#dat[Status_analysis == "Exotic", tpch := 18]
-#dat <- dat[order(ILT_analysis, Status_analysis, yi),]
-#
-## -- ILT for global data
-### Abundance
-#mod1 <- rma.mv(yi ~ ILT_analysis - 1, random = ~1 | Author_date/Case.ID, V=vi, 
-#              data = dat[Global_analysis == "Yes" & Response_variable == "Abundance" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2") & ILT_analysis != "Railway",], method = "REML")
-#mod1
-#
-#dt_results_mod1_model <- data.table(
-#    Model_ID = "Global / ILT - Abundance",
-#    QM =mod1$QM,
-#    QM_pvalue = ifelse(mod1$QM == 0, "p < 0.0001", paste0("p = ", round(mod1$QMp, 2))),
-#    QE =mod1$QE,
-#    QE_pvalue = ifelse(mod1$QEp == 0, "p < 0.0001", paste0("p = ", round(mod1$QEp, 2))),
-#    N = mod1$k
-#)
-#
+
+data_metaanalysis[Global_analysis == "Yes" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2"), .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable, ILT_analysis)]
+
+data_metaanalysis[Status_analysis %in% c("Native", "Exotic"), .(N_studies = uniqueN(Study.ID), N_cases = .N), keyby = .(Response_variable, Status_analysis, ILT_analysis)]
+
+coul <- brewer.pal(9, "BuPu") 
+coula <- brewer.pal(9, "Blues")
+coulb <- brewer.pal(5, "Oranges")
+
+dat <- data_metaanalysis
+dat$ILT_analysis <- factor(dat$ILT_analysis, levels=c("Highway","Non_Highway_road","Powerline", "Pipeline", "Railway"))
+dat$Status_analysis <- factor(dat$Status_analysis, levels=c("Mixed","Exotic","Native"))
+dat[Status_analysis == "Mixed", color := coulb[4]]
+dat[Status_analysis == "Native", color := coula[8]]
+dat[Status_analysis == "Exotic", color := coula[5]]
+dat[Status_analysis == "Mixed", tpch := 16]
+dat[Status_analysis == "Native", tpch := 15]
+dat[Status_analysis == "Exotic", tpch := 18]
+dat <- dat[order(ILT_analysis, Status_analysis, yi),]
+
+# -- ILT for global data
+## Abundance
+mod1 <- rma.mv(yi ~ ILT_analysis - 1, random = ~1 | Author_date/Case.ID, V=vi, 
+              data = dat[Global_analysis == "Yes" & Response_variable == "Abundance" & !Case.ID %in% c("Eyitayo_2020_6", "Eyitayo_2020_2") & ILT_analysis != "Railway",], method = "REML")
+
+dt_results_mod1_model <- data.table(
+    Model_ID = "Global / ILT - Abundance",
+    QM =mod1$QM,
+    QM_pvalue = ifelse(mod1$QM == 0, "p < 0.0001", paste0("p = ", round(mod1$QMp, 2))),
+    QE =mod1$QE,
+    QE_pvalue = ifelse(mod1$QEp == 0, "p < 0.0001", paste0("p = ", round(mod1$QEp, 2))),
+    N = mod1$k
+)
+
 #dt_results_mod1_coeff <- data.table(
 #    LTI = substr(names(coef(mod1)),13,50),
 #    Coeff = round(coef(mod1), 2),
@@ -1601,6 +1595,29 @@ of the outcome category.
 #dev.off()  
 
 ```
+
+### Effects of moderators on abundance
+
+We aimed to assess the effect of the type of LTI, as well as the 
+*native* or *exotic* status of the flora studied on the effect sizes calculated
+for abundance. We first analyzed the effect of the type of LTI using all the
+non-redundant effect sizes extracted from the studies, regardless of plant
+status. This means that we did not include effect sizes that were
+calculated on a subset of the data used to compute another more general
+one. So for instance, if effect sizes were available for ruderal plants
+as well as native and non-native ruderals, we only used the effect size for
+ruderals in this global analysis. We also discarded the data for railways as we
+only had a single case for this LTI.
+To see if the habitat role of verges was different for exotic and native
+plants, we also ran a separate analysis using subsets of the data for each LTI
+where we had effect sizes specifically for the abundance of native and/or
+exotic species.
+
+
+
+
+### Effects of moderators on species richness
+
  
 # References
 
@@ -1621,6 +1638,7 @@ of the outcome category.
 #
 #ggplot(data = data_synthesis) +
 #    geom_bar(mapping = aes(x = , fill = Risk_of_bias))
+
 #
 ```
 
